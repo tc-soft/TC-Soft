@@ -1,0 +1,64 @@
+$colorIcon1: white;
+$colorIcon2: #A2D9F7;
+$colorIcon3: #00CCFF;
+$colorIcon4: black;
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  
+    margin: 0 auto;
+    max-width: 1032px;
+  
+    height: 3rem;
+    // border-bottom-style: solid;
+    // border-bottom-color: #000;
+    background-color: #fff;
+  
+    &__logo {
+        padding: 0rem 0rem 0rem 0.9rem;
+    }
+  
+    &__menu {
+        
+        margin: 0 0 0 auto;
+    
+        & li {
+            display: inline;
+        }
+  
+        & a {
+            display: inline-block;
+            width: 135px;
+            color: #000;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: 200ms;
+            padding: 0.7rem 0;
+        }
+        
+        & a:hover {
+            background-color: #eee;
+        }
+    }
+    
+  }
+
+  .colorIcon1 {
+    fill: $colorIcon1;
+  }
+  .colorIcon2 {
+    fill: $colorIcon2;
+  }
+  .colorIcon3 {
+    fill: $colorIcon3;
+  }
+  .colorIcon4 {
+    fill: $colorIcon4;
+  }
+  

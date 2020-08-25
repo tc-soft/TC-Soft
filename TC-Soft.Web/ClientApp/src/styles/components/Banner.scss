@@ -1,0 +1,35 @@
+.sectionBanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: left;
+    margin: 0 auto;
+    max-width: 1032px;
+    font-family: 'Titillium Web', sans-serif;
+    /* border-bottom-style: solid; */
+    /* border-bottom-color: #000; */
+    background-color: #ddd;
+    color: #fff;
+    
+    height: 10rem;
+  }
+  
+  .fil1 {
+    fill: #A2D9F7
+  }
+  
+  .fil2 {
+    fill: black
+  }
+  
+  .fil0 {
+    fill: aqua
+  }
+  
+  .fil4 {
+    fill: white
+  }
+  
+  .fil3 {
+    fill: brown
+  }

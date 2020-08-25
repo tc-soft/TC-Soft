@@ -1,0 +1,69 @@
+footer {
+    margin: 0 auto;
+    max-width: 1032px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.social {
+    margin-top: 1rem;
+    background-color: #fff;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        border-top: 1px #000 solid;
+        /* padding-left: 0; */
+    }
+    li {
+        display: inline-block;
+        margin: 0.5rem 1rem 0.5rem 0;
+        font-size: 1.25rem;
+    }
+
+    .fa-linkedin:hover {
+        color: #1d77b3;
+    }
+    .fa-github:hover {
+        /* color: #5CF64A; */
+        color: #06d6a0;
+    }
+    .fa-envelope:hover {
+        /* color: #FCBC27; */
+        color: #ffb563;
+    }
+    .fa-facebook:hover {
+        /* color: #2460F8; - orygin*/
+        /* color: #0091ad; */
+        color: #54c6eb;
+    }
+    .fa-youtube:hover {
+        color: #fa0019;
+    }
+}
+
+.legal {
+    /* padding: 0.9375rem 1.875rem; */
+    background-color: #eee;
+    font-size: 0.7rem;
+
+    ul {
+        display: flex;
+        width: 100%;
+        list-style: none;
+    }
+    li {
+        // margin: 1rem 0.5rem;
+        margin: 0.5rem 1rem 0.5rem 1rem;
+        white-space: nowrap;
+    }
+    li:nth-last-child(2) {
+        flex: 1;
+    }
+}

@@ -1,0 +1,23 @@
+
+.article {
+    margin: 0rem auto;
+    max-width: 1000px;
+    padding: 0rem 1rem;
+    padding-top: 1rem;
+  
+    &__header {
+      padding-bottom: 0.4rem;
+    }
+    svg {
+      padding: 0 0.5em 0 0;
+      vertical-align: middle;
+    }
+    h3 {
+      color: black;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    p {
+      text-align: justify;
+    }
+  }
