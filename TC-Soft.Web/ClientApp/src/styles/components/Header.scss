@@ -1,35 +1,27 @@
-$colorIcon1: white;
-$colorIcon2: #A2D9F7;
-$colorIcon3: #00CCFF;
-$colorIcon4: black;
-
 .header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-  
     margin: 0 auto;
     max-width: 1032px;
-  
     height: 3rem;
-    // border-bottom-style: solid;
-    // border-bottom-color: #000;
-    background-color: #fff;
-  
+    border-bottom-style: solid;
+    border-bottom-color: #aaa;
+    background-color: rgba(0, 0, 0, 0.05);
+
     &__logo {
         padding: 0rem 0rem 0rem 0.9rem;
     }
-  
+
     &__menu {
-        
         margin: 0 0 0 auto;
-    
+
         & li {
             display: inline;
         }
-  
+
         & a {
             display: inline-block;
             width: 135px;
@@ -41,13 +33,13 @@ $colorIcon4: black;
             transition: 200ms;
             padding: 0.7rem 0;
         }
-        
+
         & a:hover {
-            background-color: #eee;
+            background-color: rgba(0, 0, 0, 0.1);
+            ;
         }
     }
-    
-  }
+}
 
   .colorIcon1 {
     fill: $colorIcon1;

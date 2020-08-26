@@ -1,0 +1,90 @@
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0rem 1rem;
+  
+    margin: 1rem auto;
+    max-width: 1000px;
+  
+    // height: 3rem;
+    // border-bottom-style: solid;
+    // border-bottom-color: #000;
+    background-color: #fff;
+  
+    &__form {
+      // background-color: gainsboro;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      align-content: stretch;
+      // max-width: 15rem;
+      // width: 12rem;
+    }
+  
+    &__title {
+      padding: 0 0 0.5rem 0;
+    }
+    input {
+      margin-bottom: 0.5rem;
+    }
+  
+    textarea {
+      resize: vertical;
+    }
+  
+    &__buttons {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;;
+      align-items: baseline;
+      align-content: stretch;
+      padding-top: 1rem;
+    }
+  }
+  
+  .buttonSend {
+    padding: 0.2rem 0;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 5rem;
+    background-color: white; 
+    border: 2px solid #4CAF50;
+  }
+  
+  .buttonReset {
+    padding: 0.2rem 0;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 5rem;
+    background-color: white; 
+    border: 2px solid #f44336;
+  }
+  
+  .implementations {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    
+      margin: 1rem auto;
+      max-width: 1000px;
+    
+      // height: 3rem;
+      // border-bottom-style: solid;
+      // border-bottom-color: #000;
+      background-color: #fff;
+  
+      tr:nth-child(even) {
+        background-color: #eee;
+    }
+}
+    
