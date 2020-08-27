@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
@@ -19,15 +20,19 @@ function Footer() {
                 </div>
 
                 <div className="legal">
+
+                    <Link to="/contact">
+                        <img src="./Microsoft_365_logo.png" alt="Microsoft365"></img>
+                    </Link>
+
                     <ul>
                         <li><a href="#">Terms &amp; Conditions</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li>&copy; 2020 TC-Soft</li>
                     </ul>
-
                 </div >
             </footer >
-        </React.Fragment>
+        </React.Fragment >
     );
 }
 

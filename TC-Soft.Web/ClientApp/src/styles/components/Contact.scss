@@ -29,6 +29,11 @@
     &__title {
       padding: 0 0 0.5rem 0;
     }
+
+    &__helpdesk {
+      color: blue;
+    }
+    
     input {
       margin-bottom: 0.5rem;
     }
@@ -67,24 +72,3 @@
     background-color: white; 
     border: 2px solid #f44336;
   }
-  
-  .implementations {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start;
-    
-      margin: 1rem auto;
-      max-width: 1000px;
-    
-      // height: 3rem;
-      // border-bottom-style: solid;
-      // border-bottom-color: #000;
-      background-color: #fff;
-  
-      tr:nth-child(even) {
-        background-color: #eee;
-    }
-}
-    

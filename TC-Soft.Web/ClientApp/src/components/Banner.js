@@ -3,8 +3,8 @@ import React from 'react';
 function Banner() {
     return (
         <React.Fragment>
-            <section className="sectionBanner">
-                <svg xmlns="http://www.w3.org/2000/svg" height="70px" version="1.1"
+            <section className="banner">
+                <svg className="banner__svg" xmlns="http://www.w3.org/2000/svg" height="70px" version="1.1"
                     viewBox="0 0 465 287">
                     <g>
                         <circle className="fil0" cx="117" cy="50" r="48" />
@@ -21,8 +21,8 @@ function Banner() {
                     </g>
                 </svg>
                 <div>
-                    <h2>Outsourcing IT dla firm</h2>
-                    <p>Budowa i utrzymanie małych serwerowni, dostawa sprzętu.</p>
+                    <h2 className="banner__title">Outsourcing IT dla firm</h2>
+                    <p className="banner__info">Budowa i utrzymanie małych serwerowni, dostawa sprzętu.</p>
                 </div>
             </section >
         </React.Fragment>

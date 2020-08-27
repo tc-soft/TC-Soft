@@ -29,7 +29,7 @@ function ContactInfo() {
                         <strong>Nr rachunku bankowego : </strong>51 1020 21234 241 12412 1241 124
                     </p>
                     <br />
-                    <h3 styleName="color: blue">HELP DESK</h3>
+                    <h3 className="contact__helpdesk">HELP DESK</h3>
                     <p>
                         <strong>Telefon : </strong>502600121<br />
                         <strong>E-mail : </strong>office(at)tc-soft.pl<br />
