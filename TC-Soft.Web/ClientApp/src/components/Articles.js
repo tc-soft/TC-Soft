@@ -127,7 +127,31 @@ function Articles() {
                     Kalkulator.
                 </p>
             </article >
-        </React.Fragment>
+
+            <article className="article">
+                <header className="article__header">
+                    <svg class="article-svg" xmlns="http://www.w3.org/2000/svg" height="20px" version="1.1"
+                        viewBox="0 0 698 429">
+                        <g>
+                            <g id="_615391616">
+                                <ellipse class="colorIcon2" cx="174" cy="265" rx="174" ry="164" />
+                                <ellipse class="colorIcon2" cx="551" cy="291" rx="147" ry="138" />
+                                <ellipse class="colorIcon2" cx="354" cy="198" rx="210" ry="198" />
+                                <rect class="colorIcon2" x="169" y="359" width="379.046" height="70.4959" />
+                            </g>
+                            <polygon class="colorIcon1" points="312,252 232,359 153,252 206,252 206,143 259,143 259,252 " />
+                            <polygon class="colorIcon3" points="545,251 465,143 386,251 439,251 439,359 492,359 492,251 " />
+                        </g>
+                    </svg>
+
+                    <h3 class="article-element">Hosting</h3>
+                </header>
+
+                <p>
+                    Dla klientów oferuje hosting współdzielony wraz z zarządzaniem. Wspieram hosting technologii .Net Core
+                </p>
+            </article>
+        </React.Fragment >
     );
 }
 

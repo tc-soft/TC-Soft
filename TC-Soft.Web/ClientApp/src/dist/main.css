@@ -12,6 +12,7 @@ html {
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+  overflow-y: scroll;
 }
 
 /* Sections
@@ -360,7 +361,9 @@ body {
   margin: 0 auto;
   max-width: 1032px;
   height: 3rem;
-  background-color: #fff;
+  border-bottom-style: solid;
+  border-bottom-color: #bbb;
+  background-color: rgba(0, 0, 0, 0.03);
 }
 .header__logo {
   padding: 0rem 0rem 0rem 0.9rem;
@@ -383,7 +386,7 @@ body {
   padding: 0.7rem 0;
 }
 .header__menu a:hover {
-  background-color: #eee;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .colorIcon1 {
@@ -402,7 +405,7 @@ body {
   fill: black;
 }
 
-.sectionBanner {
+.banner {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -412,9 +415,18 @@ body {
   font-family: "Titillium Web", sans-serif;
   /* border-bottom-style: solid; */
   /* border-bottom-color: #000; */
-  background-color: #ddd;
-  color: #fff;
+  background-color: #bbb;
   height: 10rem;
+}
+.banner__svg {
+  margin: 1rem 1rem;
+}
+.banner__title {
+  margin: 1rem 0rem 0rem 0rem;
+  color: #fff;
+}
+.banner__info {
+  color: #fff;
 }
 
 .fil1 {
@@ -459,6 +471,41 @@ body {
   text-align: justify;
 }
 
+.Authorizations {
+  background-color: #eee;
+}
+.Authorizations img {
+  /* padding: 1rem; */
+  padding: 2rem 1rem 2rem 1rem;
+  vertical-align: middle;
+}
+
+.implementations {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 1rem auto;
+  max-width: 1000px;
+  background-color: #fff;
+}
+.implementations__table {
+  width: 100%;
+}
+.implementations__company {
+  width: 20%;
+}
+.implementations__detail {
+  width: 70%;
+}
+.implementations__date {
+  width: 10%;
+}
+.implementations tr:nth-child(even) {
+  background-color: #eee;
+}
+
 .contact {
   display: flex;
   flex-direction: row;
@@ -480,6 +527,9 @@ body {
 }
 .contact__title {
   padding: 0 0 0.5rem 0;
+}
+.contact__helpdesk {
+  color: blue;
 }
 .contact input {
   margin-bottom: 0.5rem;
@@ -515,20 +565,6 @@ body {
   width: 5rem;
   background-color: white;
   border: 2px solid #f44336;
-}
-
-.implementations {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 1rem auto;
-  max-width: 1000px;
-  background-color: #fff;
-}
-.implementations tr:nth-child(even) {
-  background-color: #eee;
 }
 
 footer {
@@ -596,4 +632,8 @@ a:hover {
 }
 .legal li:nth-last-child(2) {
   flex: 1;
+}
+.legal img {
+  height: 20px;
+  margin: 0.5rem 1rem 0rem 1rem;
 }

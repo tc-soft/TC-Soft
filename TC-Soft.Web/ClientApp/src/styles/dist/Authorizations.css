@@ -1,0 +1,40 @@
+.authorizations {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1032px;
+  /* border-bottom-style: solid; */
+  /* border-bottom-color: #000; */
+}
+.authorizations h3 {
+  flex: 0 1 100%;
+  padding: 1rem 0rem 0rem 1rem;
+  color: black;
+  display: inline-block;
+  vertical-align: middle;
+}
+.authorizations__Microsoft {
+  height: 80px;
+}
+.authorizations__VMWare {
+  height: 80px;
+}
+.authorizations__Veeam {
+  height: 60px;
+}
+.authorizations__ESET {
+  height: 50px;
+}
+.authorizations__KiR {
+  height: 60px;
+}
+.authorizations__InsERT {
+  height: 40px;
+}
+.authorizations img {
+  /* padding: 1rem; */
+  padding: 2rem 1rem 2rem 1rem;
+}

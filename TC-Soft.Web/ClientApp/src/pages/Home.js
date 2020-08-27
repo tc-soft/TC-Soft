@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Articles from '../components/Articles';
+import Authorizations from '../components/Authorizations';
 import Footer from '../components/Footer';
 
 function Home() {
@@ -11,6 +12,7 @@ function Home() {
         <Header />
         <Banner />
         <Articles />
+        <Authorizations />
         <Footer />
     </React.Fragment>
   );
