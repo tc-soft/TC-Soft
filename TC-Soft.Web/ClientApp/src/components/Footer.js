@@ -28,7 +28,7 @@ function Footer() {
                     <ul>
                         <li><a href="#">Terms &amp; Conditions</a></li>
                         <li><a href="#">Privacy Policy</a></li>
-                        <li>&copy; 2020 TC-Soft</li>
+                        <li>&copy; 2020.09 TC-Soft</li>
                     </ul>
                 </div >
             </footer >
