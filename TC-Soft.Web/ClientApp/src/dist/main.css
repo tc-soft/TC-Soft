@@ -363,7 +363,6 @@ body {
   height: 3rem;
   border-bottom-style: solid;
   border-bottom-color: #bbb;
-  background-color: rgba(0, 0, 0, 0.03);
 }
 .header__logo {
   padding: 0rem 0rem 0rem 0.9rem;
@@ -387,6 +386,7 @@ body {
 }
 .header__menu a:hover {
   background-color: rgba(0, 0, 0, 0.1);
+  text-decoration: none;
 }
 
 .colorIcon1 {
@@ -449,8 +449,30 @@ body {
   fill: brown;
 }
 
+.bannerSVG {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: left;
+  margin: 0 auto;
+  max-width: 1032px;
+  font-family: "Titillium Web", sans-serif;
+  /* border-bottom-style: solid; */
+  /* border-bottom-color: #000; */
+  background-color: #bbb;
+  height: 10rem;
+}
+.bannerSVG__svg {
+  margin: 1rem 1rem;
+}
+
 .article {
-  margin: 0rem auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin: 0 auto;
   max-width: 1000px;
   padding: 0rem 1rem;
   padding-top: 1rem;
@@ -468,16 +490,57 @@ body {
   vertical-align: middle;
 }
 .article p {
+  flex: 100%;
   text-align: justify;
+  text-indent: 3%;
+  line-height: 1.4rem;
+  border-top-style: solid;
+  border-top-color: #bbb;
+  padding-top: 1rem;
+}
+.article__NetCore {
+  padding: 0rem 0.5rem !important;
 }
 
-.Authorizations {
-  background-color: #eee;
+.authorizations {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1032px;
+  /* border-bottom-style: solid; */
+  /* border-bottom-color: #000; */
 }
-.Authorizations img {
+.authorizations h3 {
+  flex: 0 1 100%;
+  padding: 1rem 0rem 0rem 1rem;
+  color: black;
+  display: inline-block;
+  vertical-align: middle;
+}
+.authorizations__Microsoft {
+  height: 80px;
+}
+.authorizations__VMWare {
+  height: 80px;
+}
+.authorizations__Veeam {
+  height: 60px;
+}
+.authorizations__ESET {
+  height: 50px;
+}
+.authorizations__KiR {
+  height: 60px;
+}
+.authorizations__InsERT {
+  height: 40px;
+}
+.authorizations img {
   /* padding: 1rem; */
   padding: 2rem 1rem 2rem 1rem;
-  vertical-align: middle;
 }
 
 .implementations {
@@ -512,7 +575,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0rem 1rem;
+  padding: 1rem 1rem;
   margin: 1rem auto;
   max-width: 1000px;
   background-color: #fff;
@@ -610,7 +673,7 @@ a:hover {
 .social .fa-facebook:hover {
   /* color: #2460F8; - orygin*/
   /* color: #0091ad; */
-  color: #54c6eb;
+  color: #2e77ef;
 }
 .social .fa-youtube:hover {
   color: #fa0019;

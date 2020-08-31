@@ -9,7 +9,7 @@
     height: 3rem;
     border-bottom-style: solid;
     border-bottom-color: #bbb;
-    background-color: rgba(0, 0, 0, 0.03);
+    // background-color: rgba(0, 0, 0, 0.03);
 
     &__logo {
         padding: 0rem 0rem 0rem 0.9rem;
@@ -36,21 +36,7 @@
 
         & a:hover {
             background-color: rgba(0, 0, 0, 0.1);
-            ;
+            text-decoration: none;
         }
     }
 }
-
-  .colorIcon1 {
-    fill: $colorIcon1;
-  }
-  .colorIcon2 {
-    fill: $colorIcon2;
-  }
-  .colorIcon3 {
-    fill: $colorIcon3;
-  }
-  .colorIcon4 {
-    fill: $colorIcon4;
-  }
-  

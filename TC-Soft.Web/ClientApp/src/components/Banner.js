@@ -7,7 +7,7 @@ function Banner() {
                 <svg className="banner__svg" xmlns="http://www.w3.org/2000/svg" height="70px" version="1.1"
                     viewBox="0 0 465 287">
                     <g>
-                        <circle className="fil0" cx="117" cy="50" r="48" />
+                        <circle className="fil2" cx="117" cy="50" r="48" />
                         <path className="fil1" d="M214 96l154 1c10,0 12,4 11,11l-22 108 -176 0 22 -108c1,-7 2,-11 11,-12z" />
                         <path className="fil2" d="M0 238l364 0c8,0 14,7 14,14l0 21c0,7 -6,14 -14,14l-350 0c-8,0 -14,-7 -14,-14l0 -35z" />
                         <circle className="fil2" cx="277" cy="167" r="11" />

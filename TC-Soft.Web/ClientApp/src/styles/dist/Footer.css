@@ -1,0 +1,70 @@
+footer {
+  margin: 0 auto;
+  max-width: 1032px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.social {
+  margin-top: 1rem;
+  background-color: #fff;
+}
+.social ul {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px #000 solid;
+  /* padding-left: 0; */
+}
+.social li {
+  display: inline-block;
+  margin: 0.5rem 1rem 0.5rem 0;
+  font-size: 1.25rem;
+}
+.social .fa-linkedin:hover {
+  color: #1d77b3;
+}
+.social .fa-github:hover {
+  /* color: #5CF64A; */
+  color: #06d6a0;
+}
+.social .fa-envelope:hover {
+  /* color: #FCBC27; */
+  color: #ffb563;
+}
+.social .fa-facebook:hover {
+  /* color: #2460F8; - orygin*/
+  /* color: #0091ad; */
+  color: #2e77ef;
+}
+.social .fa-youtube:hover {
+  color: #fa0019;
+}
+
+.legal {
+  /* padding: 0.9375rem 1.875rem; */
+  background-color: #eee;
+  font-size: 0.7rem;
+}
+.legal ul {
+  display: flex;
+  width: 100%;
+  list-style: none;
+}
+.legal li {
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  white-space: nowrap;
+}
+.legal li:nth-last-child(2) {
+  flex: 1;
+}
+.legal img {
+  height: 20px;
+  margin: 0.5rem 1rem 0rem 1rem;
+}

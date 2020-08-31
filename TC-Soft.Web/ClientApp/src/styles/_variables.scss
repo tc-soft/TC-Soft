@@ -1,4 +1,51 @@
-$colorIcon1: white;
-$colorIcon2: #A2D9F7;
-$colorIcon3: #00CCFF;
-$colorIcon4: black;
+$color1: white;
+$color2: #A2D9F7;
+$color3: #00CCFF;
+$color4: black;
+$color5: #666666;
+$color6: #CCCCCC;
+
+// Header - Logo
+
+.fillColor1 {
+    fill: $color1;
+}
+.fillColor2 {
+    fill: $color2;
+}
+.fillColor3 {
+    fill: $color3;
+}
+.fillColor4 {
+    fill: $color4;
+}
+
+.color1 {
+    fill: $color1;
+}
+.color2 {
+    fill: $color2;
+}
+.color3 {
+    fill: $color3;
+}
+.color4 {
+    fill: $color4;
+}
+//BannerSVG
+.str3 {stroke:black;stroke-width:1.00456}
+.str1 {stroke:#A2D9F7;stroke-width:0.502279}
+.str2 {stroke:black;stroke-width:0.200912}
+.str4 {stroke:black;stroke-width:0.100456}
+.str0 {stroke:#A2D9F7;stroke-width:0.0765473}
+.fil6 {fill:none}
+.fil0 {fill:#A2D9F7}
+.fil4 {fill:#A2D9F7}
+.fil5 {fill:black}
+.fil2 {fill:#00CCFF}
+.fil8 {fill:#00CCFF}
+.fil10 {fill:lime}
+.fil7 {fill:#CCCCCC}
+.fil3 {fill:#CCCCCC}
+.fil1 {fill:white}
+.fil9 {fill:white}

@@ -1,0 +1,43 @@
+.bannerSVG {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    margin: 0 auto;
+
+    max-width: 1032px;
+    font-family: 'Titillium Web', sans-serif;
+    /* border-bottom-style: solid; */
+    /* border-bottom-color: #000; */
+    // background-color: #bbb;
+    
+    &__svg {
+      margin: 1rem 1rem;
+    }
+}
+
+#ehmc71m3f8ji8 {
+    animation: ehmc71m3f8ji8_c_o 10000ms linear infinite normal forwards
+}
+
+@keyframes ehmc71m3f8ji8_c_o {
+    5%  {opacity: 0.500000}
+    10% {opacity: 1}
+    15% {opacity: 0.500000}
+    20% {opacity: 1}
+    25% {opacity: 0.500000}
+    30% {opacity: 1}
+    35% {opacity: 0.500000}
+    40% {fill: red; opacity: 1}
+    45% {opacity: 1}
+    50% {opacity: 0.500000}
+    55% {opacity: 0.523810}
+    60% {opacity: 0.500000}
+    65% {fill: blue; opacity: 1}
+    70% {opacity: 1}
+    75% {opacity: 1}
+    80% {opacity: 1}
+    85% {opacity: 0.500000}
+    90% {opacity: 0.523810}
+    100% {opacity: 1}
+}

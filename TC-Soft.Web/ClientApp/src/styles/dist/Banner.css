@@ -1,0 +1,23 @@
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: left;
+  margin: 0 auto;
+  max-width: 1032px;
+  font-family: "Titillium Web", sans-serif;
+  /* border-bottom-style: solid; */
+  /* border-bottom-color: #000; */
+  background-color: #bbb;
+  height: 10rem;
+}
+.banner__svg {
+  margin: 1rem 1rem;
+}
+.banner__title {
+  margin: 1rem 0rem 0rem 0rem;
+  color: #fff;
+}
+.banner__info {
+  color: #fff;
+}

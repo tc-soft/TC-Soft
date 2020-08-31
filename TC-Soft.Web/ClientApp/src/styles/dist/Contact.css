@@ -1,0 +1,60 @@
+.contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 1rem;
+  margin: 1rem auto;
+  max-width: 1000px;
+  background-color: #fff;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+.contact__title {
+  padding: 0 0 0.5rem 0;
+}
+.contact__helpdesk {
+  color: blue;
+}
+.contact input {
+  margin-bottom: 0.5rem;
+}
+.contact textarea {
+  resize: vertical;
+}
+.contact__buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: stretch;
+  padding-top: 1rem;
+}
+
+.buttonSend {
+  padding: 0.2rem 0;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 5rem;
+  background-color: white;
+  border: 2px solid #4CAF50;
+}
+
+.buttonReset {
+  padding: 0.2rem 0;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 5rem;
+  background-color: white;
+  border: 2px solid #f44336;
+}

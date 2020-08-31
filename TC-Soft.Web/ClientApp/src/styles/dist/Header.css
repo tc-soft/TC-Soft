@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1032px;
+  height: 3rem;
+  border-bottom-style: solid;
+  border-bottom-color: #bbb;
+}
+.header__logo {
+  padding: 0rem 0rem 0rem 0.9rem;
+}
+.header__menu {
+  margin: 0 0 0 auto;
+}
+.header__menu li {
+  display: inline;
+}
+.header__menu a {
+  display: inline-block;
+  width: 135px;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: 200ms;
+  padding: 0.7rem 0;
+}
+.header__menu a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
