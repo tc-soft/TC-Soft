@@ -1,16 +1,18 @@
-### Hi there 👋
+### Main website TC-Soft.pl ###
 
-<!--
-**tc-soft/TC-Soft** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+This repo contains the code to build the .NET runtime, libraries and shared host (dotnet) installers for all supported platforms, as well as the sources to .NET runtime and libraries.
 
-Here are some ideas to get you started:
+To start FrontEnd project clone this repo, install depdencies, then start the npm start script process with the following :
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+```
+git clone https://github.com/ilkeraltin/react-with-instagram-api.git .
+```
+
+```
+cd TC-Soft\ClientApp
+npm install
+npm start
+```
+
+Tadeusz Ciszewski
+office@tc-soft.pl
