@@ -1,17 +1,29 @@
-.fillColor1 {
+.fill00 {
+  fill: black;
+}
+
+.fill06 {
+  fill: #bbb;
+}
+
+.fill10 {
   fill: white;
 }
 
-.fillColor2 {
+.fill11 {
   fill: #A2D9F7;
 }
 
-.fillColor3 {
-  fill: #00CCFF;
+.fill12 {
+  fill: #007CB0;
 }
 
-.fillColor4 {
-  fill: black;
+.fill55 {
+  fill: red;
+}
+
+.fillNone {
+  fill: none;
 }
 
 .color1 {
@@ -28,6 +40,26 @@
 
 .color4 {
   fill: black;
+}
+
+.line00-1 {
+  stroke: black;
+  stroke-width: 1;
+}
+
+.line00-01 {
+  stroke: black;
+  stroke-width: 0.1;
+}
+
+.line00-05 {
+  stroke: black;
+  stroke-width: 0.5;
+}
+
+.line11 {
+  stroke: #A2D9F7;
+  stroke-width: 0.5;
 }
 
 .str3 {
@@ -50,51 +82,7 @@
   stroke-width: 0.100456;
 }
 
-.str0 {
+.str5 {
   stroke: #A2D9F7;
-  stroke-width: 0.0765473;
-}
-
-.fil6 {
-  fill: none;
-}
-
-.fil0 {
-  fill: #A2D9F7;
-}
-
-.fil4 {
-  fill: #A2D9F7;
-}
-
-.fil5 {
-  fill: black;
-}
-
-.fil2 {
-  fill: #00CCFF;
-}
-
-.fil8 {
-  fill: #00CCFF;
-}
-
-.fil10 {
-  fill: lime;
-}
-
-.fil7 {
-  fill: #CCCCCC;
-}
-
-.fil3 {
-  fill: #CCCCCC;
-}
-
-.fil1 {
-  fill: white;
-}
-
-.fil9 {
-  fill: white;
+  stroke-width: 0.2;
 }

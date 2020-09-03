@@ -21,6 +21,8 @@ $color10: white;
 $color11: #A2D9F7;
 $color12: #007CB0; //RAL5015 CMYK 90,40,0,0 RGB 0,124,176
 
+$colorModemSnd: red;
+$colorModemRcv: lime;
 //https://coolors.co/a2d9f7-007cb0-12130f-5b9279
 
 .fill00 {
@@ -70,9 +72,9 @@ $color12: #007CB0; //RAL5015 CMYK 90,40,0,0 RGB 0,124,176
     stroke: $color00;
     stroke-width: 0.1;
 }
-.line00-02 {
+.line00-05 {
     stroke: $color00;
-    stroke-width: 0.2;
+    stroke-width: 0.5;
 }
 
 .line11 {
@@ -80,10 +82,17 @@ $color12: #007CB0; //RAL5015 CMYK 90,40,0,0 RGB 0,124,176
     stroke-width: 0.5;
 }
 
-
 //BannerSVG
 .str3 {stroke:black;stroke-width:1.00456}
 .str1 {stroke:#A2D9F7;stroke-width:0.502279}
 .str2 {stroke:black;stroke-width:0.200912}
-.str4 {stroke:black;stroke-width:0.100456}
-.str0 {stroke:#A2D9F7;stroke-width:0.0765473}
+
+.str4 {
+    stroke:black;
+    stroke-width:0.100456}
+
+// Elementy okna
+.str5 {
+    stroke: $color11;
+    stroke-width:0.2
+}
