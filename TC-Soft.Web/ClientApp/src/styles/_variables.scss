@@ -6,7 +6,8 @@ $color5: #666666;
 $color6: #CCCCCC;
 
 
-$color01: black;
+$color00: black;
+$color01: #666;
 $color02: #777;
 $color03: #888;
 $color04: #999;
@@ -22,20 +23,30 @@ $color12: #007CB0; //RAL5015 CMYK 90,40,0,0 RGB 0,124,176
 
 //https://coolors.co/a2d9f7-007cb0-12130f-5b9279
 
-// Header - Logo
+.fill00 {
+    fill: $color00;
+}
+.fill06 {
+    fill: $color06;
+}
+.fill10 {
+    fill: $color10;
+}
+.fill11 {
+    fill: $color11;
+}
+.fill12 {
+    fill: $color12;
+}
 
-.fillColor1 {
-    fill: $color1;
+.fill55 {
+    fill: red;
 }
-.fillColor2 {
-    fill: $color2;
+
+.fillNone {
+    fill:none;
 }
-.fillColor3 {
-    fill: $color3;
-}
-.fillColor4 {
-    fill: $color4;
-}
+
 
 .color1 {
     fill: $color1;
@@ -49,20 +60,30 @@ $color12: #007CB0; //RAL5015 CMYK 90,40,0,0 RGB 0,124,176
 .color4 {
     fill: $color4;
 }
+
+.line00-1 {
+    stroke: $color00;
+    stroke-width: 1;
+}
+
+.line00-01 {
+    stroke: $color00;
+    stroke-width: 0.1;
+}
+.line00-02 {
+    stroke: $color00;
+    stroke-width: 0.2;
+}
+
+.line11 {
+    stroke: $color11;
+    stroke-width: 0.5;
+}
+
+
 //BannerSVG
 .str3 {stroke:black;stroke-width:1.00456}
 .str1 {stroke:#A2D9F7;stroke-width:0.502279}
 .str2 {stroke:black;stroke-width:0.200912}
 .str4 {stroke:black;stroke-width:0.100456}
 .str0 {stroke:#A2D9F7;stroke-width:0.0765473}
-.fil6 {fill:none}
-.fil0 {fill:#A2D9F7}
-.fil4 {fill:#A2D9F7}
-.fil5 {fill:black}
-.fil2 {fill:#00CCFF}
-.fil8 {fill:#00CCFF}
-.fil10 {fill:lime}
-.fil7 {fill:#CCCCCC}
-.fil3 {fill:#CCCCCC}
-.fil1 {fill:white}
-.fil9 {fill:white}
