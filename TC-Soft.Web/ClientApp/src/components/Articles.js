@@ -5,20 +5,19 @@ function Articles() {
         <React.Fragment>
             <article className="article">
                 <header className="article__header">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" version="1.1"
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        height="20px" version="1.1"
                         viewBox="0 0 832 516">
                         <g>
-                            <path className="color2"
-                                d="M272 216c0,-17 0,-35 0,-53 0,-37 90,-51 143,-51 52,0 140,14 140,51 0,18 0,36 0,53 158,102 161,208 161,253 0,6 -3,11 -18,11 -203,0 -370,0 -573,0 -14,0 -14,-7 -14,-11 0,-45 29,-180 161,-253z" />
-                            <circle className="color1" cx="416" cy="314" r="132" />
-                            <path className="color3" d="M475 382c12,-9 19,29 51,10l-24 23c-15,1 -38,-24 -27,-33z" />
-                            <path className="color2"
-                                d="M415 0c301,0 447,117 412,195l-224 -40 -6 -38c-138,-41 -224,-41 -362,0l-5 37 -224 41c-39,-78 107,-195 409,-195z" />
-                            <path className="color3" d="M13 204l218 -41 5 44c-2,13 -175,52 -190,40l-33 -43z" />
-                            <circle className="color3" cx="416" cy="314" r="88" />
-                            <path className="color3" d="M819 204l-218 -41 -5 44c2,13 175,52 190,40l33 -43z" />
-                            <rect className="color3" x="586" y="480" width="72.2422" height="36.1211" />
-                            <rect className="color3" x="173" y="480" width="72.2422" height="36.1211" />
+                            <path className="fill11" d="M272 216c0,-17 0,-35 0,-53 0,-37 90,-51 143,-51 52,0 140,14 140,51 0,18 0,36 0,53 158,102 161,208 161,253 0,6 -3,11 -18,11 -203,0 -370,0 -573,0 -14,0 -14,-7 -14,-11 0,-45 29,-180 161,-253z" />
+                            <circle className="fill10" cx="416" cy="314" r="132" />
+                            <path className="fill12" d="M475 382c12,-9 19,29 51,10l-24 23c-15,1 -38,-24 -27,-33z" />
+                            <path className="fill11" d="M415 0c301,0 447,117 412,195l-224 -40 -6 -38c-138,-41 -224,-41 -362,0l-5 37 -224 41c-39,-78 107,-195 409,-195z" />
+                            <path className="fill12" d="M13 204l218 -41 5 44c-2,13 -175,52 -190,40l-33 -43z" />
+                            <circle className="fill12" cx="416" cy="314" r="88" />
+                            <path className="fill12" d="M819 204l-218 -41 -5 44c2,13 175,52 190,40l33 -43z" />
+                            <rect className="fill12" x="586" y="480" width="72.2422" height="36.1211" />
+                            <rect className="fill12" x="173" y="480" width="72.2422" height="36.1211" />
                         </g>
                     </svg>
                     <h3>HelpDesk</h3>
@@ -35,23 +34,22 @@ function Articles() {
 
             <article className="article">
                 <header className="article__header">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" version="1.1"
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        height="20px" version="1.1"
                         viewBox="0 0 149 93">
                         <g>
-                            <metadata id="CorelCorpID_0Corel-Layer" />
-                            <path className="color2"
-                                d="M10 40l130 0c13,0 13,13 0,13l-10 34 -9 6 -93 0 -9 -6 -9 -34c-13,0 -13,-13 0,-13z" />
-                            <rect className="color1" x="56" y="53" width="9.65631" height="27.4833" />
-                            <rect className="color1" x="84" y="53" width="9.65631" height="27.4833" />
-                            <rect className="color1" transform="matrix(1 -0 -0.270577 1 115.416 53.1097)" width="9.65631"
+                            <path className="fill11" d="M10 40l130 0c13,0 13,13 0,13l-10 34 -9 6 -93 0 -9 -6 -9 -34c-13,0 -13,-13 0,-13z" />
+                            <rect className="fill10" x="56" y="53" width="9.65631" height="27.4833" />
+                            <rect className="fill10" x="84" y="53" width="9.65631" height="27.4833" />
+                            <rect className="fill10" transform="matrix(1 -0 -0.270577 1 115.416 53.1097)" width="9.65631"
                                 height="27.4833" />
-                            <rect className="color1" transform="matrix(-1 -0 0.270577 1 34.0714 53.1097)" width="9.65631"
+                            <rect className="fill10" transform="matrix(-1 -0 0.270577 1 34.0714 53.1097)" width="9.65631"
                                 height="27.4833" />
-                            <polygon className="color2" points="26,10 37,4 75,4 75,10 42,10 33,16 27,37 19,37 " />
-                            <polygon className="color2" points="123,10 113,4 75,4 75,10 107,10 116,16 122,37 131,37 " />
-                            <rect className="color3" x="56" width="37.1396" height="13.9274" />
-                            <rect className="color3" x="56" y="69" width="9.65631" height="11.4204" />
-                            <rect className="color3" x="84" y="69" width="9.65631" height="11.4204" />
+                            <polygon className="fill11" points="26,10 37,4 75,4 75,10 42,10 33,16 27,37 19,37 " />
+                            <polygon className="fill11" points="123,10 113,4 75,4 75,10 107,10 116,16 122,37 131,37 " />
+                            <rect className="fill12" x="56" width="37.1396" height="13.9274" />
+                            <rect className="fill12" x="56" y="69" width="9.65631" height="11.4204" />
+                            <rect className="fill12" x="84" y="69" width="9.65631" height="11.4204" />
                         </g>
                     </svg>
                     <h3>Sprzedaż</h3>
@@ -69,16 +67,17 @@ function Articles() {
 
             < article className="article" >
                 <header className="article__header">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" version="1.1"
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        height="20px" version="1.1"
                         viewBox="0 0 162 100">
                         <g>
-                            <path className="color2" d="M51 19l0 -15 5 -4 96 0 5 4 0 74 -5 4 -146 0c-8,0 -8,-8 0,-8l0 -35 25 -20 20 0z" />
-                            <circle className="color3" cx="124" cy="82" r="18" />
-                            <circle className="color3" cx="33" cy="82" r="18" />
-                            <circle className="color1" cx="124" cy="82" r="9" />
-                            <circle className="color1" cx="33" cy="82" r="9" />
-                            <polygon className="color1" points="16,43 36,27 51,27 51,47 16,47 " />
-                            <rect className="color2" x="148" y="66" width="14.0869" height="5.41014" />
+                            <path className="fill11" d="M51 19l0 -15 5 -4 96 0 5 4 0 74 -5 4 -146 0c-8,0 -8,-8 0,-8l0 -35 25 -20 20 0z" />
+                            <circle className="fill12" cx="124" cy="82" r="18" />
+                            <circle className="fill12" cx="33" cy="82" r="18" />
+                            <circle className="fill10" cx="124" cy="82" r="9" />
+                            <circle className="fill10" cx="33" cy="82" r="9" />
+                            <polygon className="fill10" points="16,43 36,27 51,27 51,47 16,47 " />
+                            <rect className="fill11" x="148" y="66" width="14.0869" height="5.41014" />
                         </g>
                     </svg>
                     <h3>Serwerownie</h3>
@@ -130,17 +129,18 @@ function Articles() {
 
             <article className="article">
                 <header className="article__header">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" version="1.1"
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        height="20px" version="1.1"
                         viewBox="0 0 698 429">
                         <g>
-                            <g id="_615391616">
-                                <ellipse class="color2" cx="174" cy="265" rx="174" ry="164" />
-                                <ellipse class="color2" cx="551" cy="291" rx="147" ry="138" />
-                                <ellipse class="color2" cx="354" cy="198" rx="210" ry="198" />
-                                <rect class="color2" x="169" y="359" width="379.046" height="70.4959" />
+                            <g>
+                                <ellipse class="fill11" cx="174" cy="265" rx="174" ry="164" />
+                                <ellipse class="fill11" cx="551" cy="291" rx="147" ry="138" />
+                                <ellipse class="fill11" cx="354" cy="198" rx="210" ry="198" />
+                                <rect class="fill11" x="169" y="359" width="379.046" height="70.4959" />
                             </g>
-                            <polygon class="color1" points="312,252 232,359 153,252 206,252 206,143 259,143 259,252 " />
-                            <polygon class="color3" points="545,251 465,143 386,251 439,251 439,359 492,359 492,251 " />
+                            <polygon class="fill10" points="312,252 232,359 153,252 206,252 206,143 259,143 259,252 " />
+                            <polygon class="fill12" points="545,251 465,143 386,251 439,251 439,359 492,359 492,251 " />
                         </g>
                     </svg>
 

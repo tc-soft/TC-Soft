@@ -1,11 +1,3 @@
-$color1: white;
-$color2: #A2D9F7;
-$color3: #00CCFF;
-$color4: black;
-$color5: #666666;
-$color6: #CCCCCC;
-
-
 $color00: black;
 $color01: #666;
 $color02: #777;
@@ -18,12 +10,13 @@ $color08: #ddd;
 $color09: #eee;
 $color10: white;
 
+//https://coolors.co/a2d9f7-007cb0-12130f-5b9279
 $color11: #A2D9F7;
 $color12: #007CB0; //RAL5015 CMYK 90,40,0,0 RGB 0,124,176
 
 $colorModemSnd: red;
 $colorModemRcv: lime;
-//https://coolors.co/a2d9f7-007cb0-12130f-5b9279
+
 
 .fill00 {
     fill: $color00;
@@ -45,54 +38,27 @@ $colorModemRcv: lime;
     fill: red;
 }
 
-.fillNone {
-    fill:none;
+.fillNone00-01 {
+    fill: none;
+    stroke: $color00;
+    stroke-width: 0.1;
 }
 
-
-.color1 {
-    fill: $color1;
-}
-.color2 {
-    fill: $color2;
-}
-.color3 {
-    fill: $color3;
-}
-.color4 {
-    fill: $color4;
+.fillNone00-05 {
+    fill: none;
+    stroke: $color00;
+    stroke-width: 0.5;
 }
 
-.line00-1 {
+.fillNone00-1 {
+    fill: none;
     stroke: $color00;
     stroke-width: 1;
 }
 
-.line00-01 {
-    stroke: $color00;
-    stroke-width: 0.1;
-}
-.line00-05 {
-    stroke: $color00;
-    stroke-width: 0.5;
-}
-
-.line11 {
+.fillNone11-02 {
+    fill: none;
     stroke: $color11;
-    stroke-width: 0.5;
+    stroke-width: 0.2;
 }
 
-//BannerSVG
-.str3 {stroke:black;stroke-width:1.00456}
-.str1 {stroke:#A2D9F7;stroke-width:0.502279}
-.str2 {stroke:black;stroke-width:0.200912}
-
-.str4 {
-    stroke:black;
-    stroke-width:0.100456}
-
-// Elementy okna
-.str5 {
-    stroke: $color11;
-    stroke-width:0.2
-}
