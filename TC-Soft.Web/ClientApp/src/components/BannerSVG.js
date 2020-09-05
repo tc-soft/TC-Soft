@@ -5,7 +5,7 @@ function BannerSVG() {
         <React.Fragment>
             <section className="bannerSVG">
                 <svg className="bannerSVG__svg" xmlns="http://www.w3.org/2000/svg"
-                    height="100px"
+                    height="400px"
                     version="1.1" viewBox="0 0 162 100">
                     <g>
                         {/* Chmura */}
@@ -33,6 +33,11 @@ function BannerSVG() {
                         {/* Polbruk budynku */}
                         <polygon className="fill00" points="20,70 53,70 48,75 26,75 " />
 
+                        {/* Magistrala chmurowa */}
+                        <rect className="fill06" x="126" y="28.5" width="6.02735" height="58.5" />
+
+                        {/* Magistrala chmurowa - linia czarna */}
+                        <line className="fillNone00-1" x1="129" y1="87" x2="129" y2="29" />
 
                         {/* Środkowa magistrala */}
                         <rect className="fill06" x="85" y="45" width="6.02735" height="55.2507" />
@@ -42,11 +47,6 @@ function BannerSVG() {
                         <line className="fillNone00-1" x1="127" y1="48" x2="88" y2="48" />
                         <line className="fillNone00-05" x1="88" y1="94" x2="7" y2="94" />
 
-                        {/* Magistrala chmurowa */}
-                        <rect className="fill06" x="126" y="28.5" width="6.02735" height="58.5" />
-
-                        {/* Magistrala chmurowa - linia czarna */}
-                        <line className="fillNone00-1" x1="129" y1="87" x2="129" y2="29" />
 
                         {/* Modem Nr1 */}
                         <g>
