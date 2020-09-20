@@ -20,6 +20,8 @@ function Banner() {
                         <circle className="fil4" cx="445" cy="82" r="3" />
                     </g>
                 </svg> */}
+
+
                 <svg className="banner__svg"
                     xmlns="http://www.w3.org/2000/svg" width="1032px" height="160px" version="1.1"
                     viewBox="0 0 1032 160">
@@ -47,12 +49,49 @@ function Banner() {
                         <polygon fill="url(#id0)" points="620,160 760,1 1032,1 1032,160" />
                     </g>
 
-                    <text x="46" y="28"  class="fil1 fnt1">Outsourcing IT dla firm</text>
-                    <text x="46" y="48"  class="fil1 fnt2">Budowa i utrzymanie małych serwerowni, dostawa sprzętu.</text>
+                    <text x="180" y="76" class="fil1 fnt1">Outsourcing IT dla firm</text>
+                    <text x="180" y="103" class="fil1 fnt2">Budowa i utrzymanie małych serwerowni, dostawa sprzętu.</text>
+                    <g>
+                        <svg className="bannerSVG__svg" xmlns="http://www.w3.org/2000/svg"
+                            height="70px"
+                            preserveAspectRatio="xMinYMin"
+                            x="40"
+                            y="45"
+                            version="1.1"
+                            viewBox="0 0 161 100">
+                            <g>
+                                {/* Podstawa */}
+                                <path className="fill00" d="M0 83l141 0c3,0 5,2 5,5l0 7c0,3 -2,5 -5,5l-136 0c-3,0 -5,-2 -5,-5l0 -12z" />
+                                
+                                {/* Monitor */}
+                                <rect className="fill00" x="101" y="76" width="23.4833" height="4.67676" />
+                                <rect className="fill11" transform="matrix(2.64845E-14 -0.807815 1 2.13946E-14 110.62 77.1502)" width="35.026" height="3.5822" />
+                                <rect className="fill12" transform="matrix(0.940892 0.338707 -0.338707 0.940892 114.022 21.3681)" width="2.58714" height="53.136" />
+                                <rect className="fill11" transform="matrix(1.81458 0.65322 -0.338707 0.940892 112.958 31.9523)" width="2.78616" height="33.1911" />
+                                <circle className="fill00" cx="112" cy="49" r="2" />
+
+                                {/* Głowa */}
+                                <circle className="fill12" cx="32" cy="24" r="17" />
+                                
+                                {/* Tułów */}
+                                <path className="fill06" d="M0 54c2,-11 8,-17 15,-20 7,8 8,8 17,10 4,4 3,18 3,22l-15 0 0 -15c0,-4 -3,-4 -3,0l0 14c0,2 1,5 3,5l26 0c5,0 12,6 12,11l-58 0 0 -27z" />
+                                
+                                {/* Klawiatura */}
+                                <rect className="fill12" transform="matrix(0.824576 -0.0906684 0.078938 0.717895 61.6482 75.6143)" width="35.026" height="3.5822" />
+                                <rect className="fill11" transform="matrix(0.994009 -0.109299 0.109299 0.994009 58.6088 77.3318)" width="35.026" height="3.5822" />
+                                <rect className="fill00" x="87" y="77" width="2.38813" height="4.17923" />
+                                {/* Narzędzia */}
+                                <path className="fill06" d="M144 8c0,-4 4,-8 6,-8l1 1 0 7c0,2 3,2 3,0l0 -7 1 -1c4,1 6,4 6,8 0,4 -3,6 -5,7l3 20c-1,7 -12,7 -12,0l2 -20c-2,-1 -5,-3 -5,-7z" />
+                                <path className="fill12" d="M134 0l5 0c2,0 -1,6 -2,8l0 11 2 0 1 1 0 8c4,8 0,12 -3,12l-2 0c-3,0 -7,-5 -2,-12l0 -8 0 -1 2 0 0 -11c0,-2 -4,-8 -1,-8z" />
+                                <circle className="fill10" cx="153" cy="34" r="1" />
+                            </g>
+                        </svg>
+                    </g>
                     <g>
                         <svg className="bannerSVG__svg" xmlns="http://www.w3.org/2000/svg"
                             height="120px"
-                            x="350"
+                            preserveAspectRatio="xMinYMin"
+                            x="780"
                             y="20"
                             version="1.1" viewBox="0 0 162 100">
                             <g>
@@ -201,10 +240,7 @@ function Banner() {
                     </g>
 
                 </svg>
-                {/* <div>
-                <h2 className="banner__title">Outsourcing IT dla firm</h2>
-                <p className="banner__info">Budowa i utrzymanie małych serwerowni, dostawa sprzętu.</p>
-            </div> */}
+
             </section>
         </React.Fragment >
     );

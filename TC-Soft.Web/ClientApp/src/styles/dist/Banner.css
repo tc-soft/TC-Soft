@@ -2,16 +2,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  justify-content: left;
+  justify-content: center;
   margin: 0 auto;
-  margin-top: 0.45rem;
-  padding-bottom: 0.45rem;
+  margin-top: 0.46rem;
+  padding-bottom: 0.46rem;
   max-width: 1032px;
   font-family: "Titillium Web", sans-serif;
   /* border-bottom-style: solid; */
   /* border-bottom-color: #000; */
   border-bottom-style: solid;
-  border-bottom-color: #bbb;
+  border-bottom-color: #ccc;
 }
 .banner__svgGradient1 {
   stop-opacity: 1;
