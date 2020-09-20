@@ -4,15 +4,22 @@
   justify-content: space-between;
   justify-content: left;
   margin: 0 auto;
+  margin-top: 0.45rem;
+  padding-bottom: 0.45rem;
   max-width: 1032px;
   font-family: "Titillium Web", sans-serif;
   /* border-bottom-style: solid; */
   /* border-bottom-color: #000; */
-  background-color: #bbb;
-  height: 10rem;
+  border-bottom-style: solid;
+  border-bottom-color: #bbb;
 }
-.banner__svg {
-  margin: 1rem 1rem;
+.banner__svgGradient1 {
+  stop-opacity: 1;
+  stop-color: #def6ff;
+}
+.banner__svgGradient2 {
+  stop-opacity: 1;
+  stop-color: #f7f7f7;
 }
 .banner__title {
   margin: 1rem 0rem 0rem 0rem;
@@ -20,4 +27,18 @@
 }
 .banner__info {
   color: #fff;
+}
+
+.fil1 {
+  fill: black;
+}
+
+.fnt1 {
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+.fnt2 {
+  font-weight: normal;
+  font-size: 1em;
 }
