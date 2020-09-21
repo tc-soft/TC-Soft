@@ -2,6 +2,26 @@
   fill: black;
 }
 
+.fill01 {
+  fill: #666;
+}
+
+.fill02 {
+  fill: #777;
+}
+
+.fill03 {
+  fill: #888;
+}
+
+.fill04 {
+  fill: #999;
+}
+
+.fill05 {
+  fill: #aaa;
+}
+
 .fill06 {
   fill: #bbb;
 }
@@ -22,67 +42,36 @@
   fill: red;
 }
 
-.fillNone {
+.fillNone00-01 {
   fill: none;
-}
-
-.color1 {
-  fill: white;
-}
-
-.color2 {
-  fill: #A2D9F7;
-}
-
-.color3 {
-  fill: #00CCFF;
-}
-
-.color4 {
-  fill: black;
-}
-
-.line00-1 {
-  stroke: black;
-  stroke-width: 1;
-}
-
-.line00-01 {
   stroke: black;
   stroke-width: 0.1;
 }
 
-.line00-05 {
+.fillNone00-05 {
+  fill: none;
   stroke: black;
   stroke-width: 0.5;
 }
 
-.line11 {
-  stroke: #A2D9F7;
-  stroke-width: 0.5;
-}
-
-.str3 {
+.fillNone00-1 {
+  fill: none;
   stroke: black;
-  stroke-width: 1.00456;
+  stroke-width: 1;
 }
 
-.str1 {
-  stroke: #A2D9F7;
-  stroke-width: 0.502279;
-}
-
-.str2 {
-  stroke: black;
-  stroke-width: 0.200912;
-}
-
-.str4 {
-  stroke: black;
-  stroke-width: 0.100456;
-}
-
-.str5 {
+.fillNone11-02 {
+  fill: none;
   stroke: #A2D9F7;
   stroke-width: 0.2;
+}
+
+.fntSVG1 {
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+.fntSVG2 {
+  font-weight: normal;
+  font-size: 1em;
 }

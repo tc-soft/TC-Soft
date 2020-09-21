@@ -4,26 +4,10 @@ function Banner() {
     return (
         <React.Fragment>
             <section className="banner">
-                {/* <svg className="banner__svg" xmlns="http://www.w3.org/2000/svg" height="70px" version="1.1"
-                    viewBox="0 0 465 287">
-                    <g>
-                        <circle className="fil2" cx="117" cy="50" r="48" />
-                        <path className="fill10" d="M214 96l154 1c10,0 12,4 11,11l-22 108 -176 0 22 -108c1,-7 2,-11 11,-12z" />
-                        <path className="fil2" d="M0 238l364 0c8,0 14,7 14,14l0 21c0,7 -6,14 -14,14l-350 0c-8,0 -14,-7 -14,-14l0 -35z" />
-                        <circle className="fil2" cx="277" cy="167" r="11" />
-                        <path className="fil1"
-                            d="M0 139c6,-32 32,-51 55,-53 20,21 28,28 54,33 10,13 14,26 15,38l-55 0 1 -27c0,-12 -23,-12 -23,0l0 39c0,8 4,11 10,11l73 0c16,0 36,23 36,36l-166 0 0 -77z" />
-                        <path className="fil2"
-                            d="M399 1l12 0c6,0 -2,12 -3,19l0 25 4 0 2 3 0 18c10,20 1,30 -6,30l-6 0c-6,0 -16,-13 -6,-30l1 -18 2 -3 3 0 0 -25c-1,-7 -9,-19 -3,-19z" />
-                        <path className="fil2"
-                            d="M425 20c0,-11 8,-19 14,-20l3 2 0 18c0,3 6,3 6,0l0 -18 2 -2c10,3 15,10 15,20 0,9 -7,13 -11,17l5 47c-1,16 -29,16 -28,0l5 -47c-5,-3 -11,-7 -11,-17z" />
-                        <circle className="fil4" cx="445" cy="82" r="3" />
-                    </g>
-                </svg> */}
-
-
-                <svg className="banner__svg"
-                    xmlns="http://www.w3.org/2000/svg" width="1032px" height="160px" version="1.1"
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    width="1032px"
+                    height="160px"
+                    version="1.1"
                     viewBox="0 0 1032 160">
                     <defs>
                         <linearGradient id="id0" gradientUnits="userSpaceOnUse"
@@ -44,15 +28,18 @@ function Banner() {
                         </linearGradient>
                     </defs>
 
+                    {/* Główny szkielet banera */}
                     <g>
                         <polygon fill="url(#id1)" points="0,160 0,1 748,1 608,160" />
                         <polygon fill="url(#id0)" points="620,160 760,1 1032,1 1032,160" />
                     </g>
 
-                    <text x="180" y="76" class="fil1 fnt1">Outsourcing IT dla firm</text>
-                    <text x="180" y="103" class="fil1 fnt2">Budowa i utrzymanie małych serwerowni, dostawa sprzętu.</text>
+                    <text x="180" y="76" class="fntSVG1">Outsourcing IT dla firm</text>
+                    <text x="180" y="103" class="fntSVG2">Budowa i utrzymanie małych serwerowni, dostawa sprzętu.</text>
+                    
+                    {/* SVG HomeWork-01 */}
                     <g>
-                        <svg className="bannerSVG__svg" xmlns="http://www.w3.org/2000/svg"
+                        <svg xmlns="http://www.w3.org/2000/svg"
                             height="70px"
                             preserveAspectRatio="xMinYMin"
                             x="40"
@@ -62,7 +49,7 @@ function Banner() {
                             <g>
                                 {/* Podstawa */}
                                 <path className="fill00" d="M0 83l141 0c3,0 5,2 5,5l0 7c0,3 -2,5 -5,5l-136 0c-3,0 -5,-2 -5,-5l0 -12z" />
-                                
+
                                 {/* Monitor */}
                                 <rect className="fill00" x="101" y="76" width="23.4833" height="4.67676" />
                                 <rect className="fill11" transform="matrix(2.64845E-14 -0.807815 1 2.13946E-14 110.62 77.1502)" width="35.026" height="3.5822" />
@@ -72,10 +59,10 @@ function Banner() {
 
                                 {/* Głowa */}
                                 <circle className="fill12" cx="32" cy="24" r="17" />
-                                
+
                                 {/* Tułów */}
                                 <path className="fill06" d="M0 54c2,-11 8,-17 15,-20 7,8 8,8 17,10 4,4 3,18 3,22l-15 0 0 -15c0,-4 -3,-4 -3,0l0 14c0,2 1,5 3,5l26 0c5,0 12,6 12,11l-58 0 0 -27z" />
-                                
+
                                 {/* Klawiatura */}
                                 <rect className="fill12" transform="matrix(0.824576 -0.0906684 0.078938 0.717895 61.6482 75.6143)" width="35.026" height="3.5822" />
                                 <rect className="fill11" transform="matrix(0.994009 -0.109299 0.109299 0.994009 58.6088 77.3318)" width="35.026" height="3.5822" />
@@ -87,8 +74,10 @@ function Banner() {
                             </g>
                         </svg>
                     </g>
+
+                    {/* SVG Cloud-01 */}
                     <g>
-                        <svg className="bannerSVG__svg" xmlns="http://www.w3.org/2000/svg"
+                        <svg xmlns="http://www.w3.org/2000/svg"
                             height="120px"
                             preserveAspectRatio="xMinYMin"
                             x="780"
@@ -96,14 +85,12 @@ function Banner() {
                             version="1.1" viewBox="0 0 162 100">
                             <g>
                                 {/* Chmura */}
-                                <g>
-                                    <ellipse className="fill11" cx="118" cy="18" rx="12" ry="11" />
-                                    <ellipse className="fill11" cx="143" cy="20" rx="10" ry="9" />
-                                    <ellipse className="fill11" cx="130" cy="13" rx="14" ry="13" />
-                                    <rect className="fill11" x="117" y="24.3" width="25.1908" height="4.68506" />
-                                    <polygon className="fill10 animArrowDown" points="127,17 122,24 116,17 120,17 120,10 123,10 123,17 " />
-                                    <polygon className="fill12 animArrowUp" points="142,17 137,10 132,17 135,17 135,24 139,24 139,17 " />
-                                </g>
+                                <ellipse className="fill11" cx="118" cy="18" rx="12" ry="11" />
+                                <ellipse className="fill11" cx="143" cy="20" rx="10" ry="9" />
+                                <ellipse className="fill11" cx="130" cy="13" rx="14" ry="13" />
+                                <rect className="fill11" x="117" y="24.3" width="25.1908" height="4.68506" />
+                                <polygon className="fill10 animArrowDown" points="127,17 122,24 116,17 120,17 120,10 123,10 123,17 " />
+                                <polygon className="fill12 animArrowUp" points="142,17 137,10 132,17 135,17 135,24 139,24 139,17 " />
 
                                 {/* Budynek */}
                                 <polygon className="fill11" points="4,38 37,22 69,38 69,69 49,69 49,47 24,47 24,69 4,69 " />
@@ -136,18 +123,13 @@ function Banner() {
 
 
                                 {/* Modem Nr1 */}
-                                <g>
-                                    <rect className="fill00" transform="matrix(1.75239E-13 -2.02368 1.32333 1.07193E-14 36.2786 95.0047)" width="9.9" height="0.5" />
-                                    <rect className="fill00 animModem1Snd" x="31.5" y="92" width="5.31666" height="4.25397" />
-                                    <rect className="fill00 animModem1Rcv" x="36.5" y="92" width="5.31666" height="4.25397" />
-                                </g>
+                                <rect className="fill00" transform="matrix(1.75239E-13 -2.02368 1.32333 1.07193E-14 36.2786 95.0047)" width="9.9" height="0.5" />
+                                <rect className="fill00 animModem1Snd" x="31.5" y="92" width="5.31666" height="4.25397" />
+                                <rect className="fill00 animModem1Rcv" x="36.5" y="92" width="5.31666" height="4.25397" />
 
                                 {/* Modem Nr2 */}
-                                <g>
-                                    <rect className="fill00 animModem2Rcv" transform="matrix(2.80341E-14 -1.05851 1.51238 4.00547E-14 126.99 53.1949)" width="5.02279" height="2.81276" />
-                                    <rect className="fill00 animModem2Snd" transform="matrix(2.80341E-14 -1.05851 1.51238 4.00547E-14 126.99 47.8774)" width="5.02279" height="2.81276" />
-                                </g>
-
+                                <rect className="fill00 animModem2Rcv" transform="matrix(2.80341E-14 -1.05851 1.51238 4.00547E-14 126.99 53.1949)" width="5.02279" height="2.81276" />
+                                <rect className="fill00 animModem2Snd" transform="matrix(2.80341E-14 -1.05851 1.51238 4.00547E-14 126.99 47.8774)" width="5.02279" height="2.81276" />
 
                                 {/* Serwer 1 Obudowa */}
                                 <rect className="fill11" x="106" y="67" width="46.2097" height="9.03616" rx="2" ry="2" />
@@ -214,12 +196,12 @@ function Banner() {
                                     <rect className="fill06" x="153" y="27" width="8" height="6" rx="1" ry="1" />
                                     <circle className="fill10" cx="157" cy="29" r="1" />
                                     <path className="fill06" d="
-                            M 154 26.5
-                            q 3 -6 6 0
-                            L 159 26.5
-                            q -2 -2 -4 0
-                            L 154 26.5
-                            " />
+                                        M 154 26.5
+                                        q 3 -6 6 0
+                                        L 159 26.5
+                                        q -2 -2 -4 0
+                                        L 154 26.5
+                                        " />
                                     <polygon className="fill10" points="157,29 158,32 156,32 " />
                                 </g>
 
@@ -227,20 +209,18 @@ function Banner() {
                                     <rect className="fill06" x="153" y="94" width="8" height="6" rx="1" ry="1" />
                                     <circle className="fill10" cx="157" cy="96" r="1" />
                                     <path className="fill06" d="
-                            M 154 93.5
-                            q 3 -6 6 0
-                            L 159 93.5
-                            q -2 -2 -4 0
-                            L 154 93.5
-                            " />
+                                        M 154 93.5
+                                        q 3 -6 6 0
+                                        L 159 93.5
+                                        q -2 -2 -4 0
+                                        L 154 93.5
+                                        " />
                                     <polygon className="fill10" points="157,96 158,99 156,99 " />
                                 </g>
                             </g>
                         </svg>
                     </g>
-
                 </svg>
-
             </section>
         </React.Fragment >
     );

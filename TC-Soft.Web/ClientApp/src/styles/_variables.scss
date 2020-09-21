@@ -21,6 +21,21 @@ $colorModemRcv: lime;
 .fill00 {
     fill: $color00;
 }
+.fill01 {
+    fill: $color01;
+}
+.fill02 {
+    fill: $color02;
+}
+.fill03 {
+    fill: $color03;
+}
+.fill04 {
+    fill: $color04;
+}
+.fill05 {
+    fill: $color05;
+}
 .fill06 {
     fill: $color06;
 }
@@ -61,4 +76,7 @@ $colorModemRcv: lime;
     stroke: $color11;
     stroke-width: 0.2;
 }
+
+.fntSVG1 {font-weight:normal;font-size:1.5em;}
+.fntSVG2 {font-weight:normal;font-size:1em;}
 

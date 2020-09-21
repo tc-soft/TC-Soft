@@ -11,7 +11,6 @@ function Home() {
     <React.Fragment>
         <Header />
         <Banner />
-        {/* <BannerSVG /> */}
         <Articles />
         <Authorizations />
         <Footer />

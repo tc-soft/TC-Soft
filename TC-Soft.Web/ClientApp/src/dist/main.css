@@ -340,6 +340,54 @@ template {
   display: none;
 }
 
+.fill00 {
+  fill: black;
+}
+
+.fill06 {
+  fill: #bbb;
+}
+
+.fill10 {
+  fill: white;
+}
+
+.fill11 {
+  fill: #A2D9F7;
+}
+
+.fill12 {
+  fill: #007CB0;
+}
+
+.fill55 {
+  fill: red;
+}
+
+.fillNone00-01 {
+  fill: none;
+  stroke: black;
+  stroke-width: 0.1;
+}
+
+.fillNone00-05 {
+  fill: none;
+  stroke: black;
+  stroke-width: 0.5;
+}
+
+.fillNone00-1 {
+  fill: none;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.fillNone11-02 {
+  fill: none;
+  stroke: #A2D9F7;
+  stroke-width: 0.2;
+}
+
 p, h1, h2, h3, h4, ul, li {
   margin: 0;
   padding: 0;
@@ -362,7 +410,7 @@ body {
   max-width: 1032px;
   height: 3rem;
   border-bottom-style: solid;
-  border-bottom-color: #bbb;
+  border-bottom-color: #ccc;
 }
 .header__logo {
   padding: 0rem 0rem 0rem 0.9rem;
@@ -389,37 +437,28 @@ body {
   text-decoration: none;
 }
 
-.colorIcon1 {
-  fill: white;
-}
-
-.colorIcon2 {
-  fill: #A2D9F7;
-}
-
-.colorIcon3 {
-  fill: #00CCFF;
-}
-
-.colorIcon4 {
-  fill: black;
-}
-
 .banner {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  justify-content: left;
+  justify-content: center;
   margin: 0 auto;
+  margin-top: 0.46rem;
+  padding-bottom: 0.46rem;
   max-width: 1032px;
   font-family: "Titillium Web", sans-serif;
   /* border-bottom-style: solid; */
   /* border-bottom-color: #000; */
-  background-color: #bbb;
-  height: 10rem;
+  border-bottom-style: solid;
+  border-bottom-color: #ccc;
 }
-.banner__svg {
-  margin: 1rem 1rem;
+.banner__svgGradient1 {
+  stop-opacity: 1;
+  stop-color: #def6ff;
+}
+.banner__svgGradient2 {
+  stop-opacity: 1;
+  stop-color: #f7f7f7;
 }
 .banner__title {
   margin: 1rem 0rem 0rem 0rem;
@@ -430,23 +469,17 @@ body {
 }
 
 .fil1 {
-  fill: #A2D9F7;
-}
-
-.fil2 {
   fill: black;
 }
 
-.fil0 {
-  fill: aqua;
+.fnt1 {
+  font-weight: normal;
+  font-size: 1.5em;
 }
 
-.fil4 {
-  fill: white;
-}
-
-.fil3 {
-  fill: brown;
+.fnt2 {
+  font-weight: normal;
+  font-size: 1em;
 }
 
 .bannerSVG {
@@ -459,13 +492,188 @@ body {
   font-family: "Titillium Web", sans-serif;
   /* border-bottom-style: solid; */
   /* border-bottom-color: #000; */
-  background-color: #bbb;
-  height: 10rem;
 }
 .bannerSVG__svg {
   margin: 1rem 1rem;
 }
 
+.animArrowDown {
+  animation: animArrowDown__keyframes 3000ms linear infinite normal forwards;
+}
+
+@keyframes animArrowDown__keyframes {
+  5% {
+    fill: #ccc;
+  }
+  10% {
+    fill: white;
+  }
+  35% {
+    fill: white;
+  }
+  40% {
+    fill: #ccc;
+  }
+  45% {
+    fill: white;
+  }
+  85% {
+    fill: white;
+  }
+  90% {
+    fill: #ccc;
+  }
+  100% {
+    fill: white;
+  }
+}
+.animArrowUp {
+  animation: animArrowUp__keyframes 2000ms linear infinite normal forwards;
+}
+
+@keyframes animArrowUp__keyframes {
+  5% {
+    fill: #ccc;
+  }
+  10% {
+    fill: #007CB0;
+  }
+  15% {
+    fill: #ccc;
+  }
+  20% {
+    fill: #007CB0;
+  }
+  25% {
+    fill: #ccc;
+  }
+  30% {
+    fill: #007CB0;
+  }
+  100% {
+    fill: #007CB0;
+  }
+}
+.animModem1Snd {
+  animation: animModem1Snd__keyframes 2000ms linear infinite normal forwards;
+}
+
+@keyframes animModem1Snd__keyframes {
+  5% {
+    fill: red;
+  }
+  10% {
+    fill: black;
+  }
+  45% {
+    fill: black;
+  }
+  50% {
+    fill: red;
+  }
+  55% {
+    fill: black;
+  }
+  70% {
+    fill: black;
+  }
+  75% {
+    fill: red;
+  }
+  100% {
+    fill: black;
+  }
+}
+.animModem2Rcv {
+  animation: animModem2Rcv__keyframes 2000ms linear infinite normal forwards;
+}
+
+@keyframes animModem2Rcv__keyframes {
+  5% {
+    fill: lime;
+  }
+  10% {
+    fill: black;
+  }
+  45% {
+    fill: black;
+  }
+  50% {
+    fill: lime;
+  }
+  55% {
+    fill: black;
+  }
+  70% {
+    fill: black;
+  }
+  75% {
+    fill: lime;
+  }
+  100% {
+    fill: black;
+  }
+}
+.animModem2Snd {
+  animation: animModem2Snd__keyframes 3000ms linear infinite normal forwards;
+}
+
+@keyframes animModem2Snd__keyframes {
+  5% {
+    fill: red;
+  }
+  10% {
+    fill: black;
+  }
+  45% {
+    fill: black;
+  }
+  50% {
+    fill: red;
+  }
+  55% {
+    fill: black;
+  }
+  70% {
+    fill: black;
+  }
+  75% {
+    fill: red;
+  }
+  100% {
+    fill: black;
+  }
+}
+.animModem1Rcv {
+  animation: animModem1Rcv__keyframes 3000ms linear infinite normal forwards;
+}
+
+@keyframes animModem1Rcv__keyframes {
+  5% {
+    fill: lime;
+  }
+  10% {
+    fill: black;
+  }
+  45% {
+    fill: black;
+  }
+  50% {
+    fill: lime;
+  }
+  55% {
+    fill: black;
+  }
+  70% {
+    fill: black;
+  }
+  75% {
+    fill: lime;
+  }
+  100% {
+    fill: black;
+  }
+}
 .article {
   display: flex;
   flex-direction: row;
@@ -494,8 +702,6 @@ body {
   text-align: justify;
   text-indent: 3%;
   line-height: 1.4rem;
-  border-top-style: solid;
-  border-top-color: #bbb;
   padding-top: 1rem;
 }
 .article__NetCore {
