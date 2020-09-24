@@ -344,6 +344,26 @@ template {
   fill: black;
 }
 
+.fill01 {
+  fill: #666;
+}
+
+.fill02 {
+  fill: #777;
+}
+
+.fill03 {
+  fill: #888;
+}
+
+.fill04 {
+  fill: #999;
+}
+
+.fill05 {
+  fill: #aaa;
+}
+
 .fill06 {
   fill: #bbb;
 }
@@ -386,6 +406,16 @@ template {
   fill: none;
   stroke: #A2D9F7;
   stroke-width: 0.2;
+}
+
+.fntSVG1 {
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+.fntSVG2 {
+  font-weight: normal;
+  font-size: 1em;
 }
 
 p, h1, h2, h3, h4, ul, li {
@@ -466,35 +496,6 @@ body {
 }
 .banner__info {
   color: #fff;
-}
-
-.fil1 {
-  fill: black;
-}
-
-.fnt1 {
-  font-weight: normal;
-  font-size: 1.5em;
-}
-
-.fnt2 {
-  font-weight: normal;
-  font-size: 1em;
-}
-
-.bannerSVG {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  justify-content: left;
-  margin: 0 auto;
-  max-width: 1032px;
-  font-family: "Titillium Web", sans-serif;
-  /* border-bottom-style: solid; */
-  /* border-bottom-color: #000; */
-}
-.bannerSVG__svg {
-  margin: 1rem 1rem;
 }
 
 .animArrowDown {
@@ -674,38 +675,44 @@ body {
     fill: black;
   }
 }
-.article {
+.mainsection {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: flex-start;
   margin: 0 auto;
-  max-width: 1000px;
-  padding: 0rem 1rem;
-  padding-top: 1rem;
+  max-width: 1032px;
+  background-color: lightgrey;
 }
-.article__header {
-  padding-bottom: 0.4rem;
+
+.mainarticle {
+  flex: 1 0 40%;
+  margin: 1em;
+  padding: 1em;
+  height: 25em;
 }
-.article svg {
-  padding: 0 0.5em 0 0;
-  vertical-align: middle;
+.mainarticle__background-1 {
+  background-image: url("../../images/background-1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
-.article h3 {
-  color: black;
-  display: inline-block;
-  vertical-align: middle;
+.mainarticle__background-2 {
+  background-image: url("../../images/background-2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
-.article p {
-  flex: 100%;
-  text-align: justify;
-  text-indent: 3%;
-  line-height: 1.4rem;
-  padding-top: 1rem;
+.mainarticle__background-3 {
+  background-image: url("../../images/background-3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
-.article__NetCore {
-  padding: 0rem 0.5rem !important;
+.mainarticle__background-4 {
+  background-image: url("../../images/background-4.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .authorizations {
