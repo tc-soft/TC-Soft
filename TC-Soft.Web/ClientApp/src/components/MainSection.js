@@ -7,7 +7,7 @@ function MainSection() {
                 <article className="mainarticle mainarticle__background-1">
                     <header className="article__header">
                         <svg xmlns="http://www.w3.org/2000/svg"
-                            height="20px" version="1.1"
+                            height="30px" version="1.1"
                             viewBox="0 0 832 516">
                             <g>
                                 <path className="fill11" d="M272 216c0,-17 0,-35 0,-53 0,-37 90,-51 143,-51 52,0 140,14 140,51 0,18 0,36 0,53 158,102 161,208 161,253 0,6 -3,11 -18,11 -203,0 -370,0 -573,0 -14,0 -14,-7 -14,-11 0,-45 29,-180 161,-253z" />
@@ -36,7 +36,7 @@ function MainSection() {
                 <article className="mainarticle mainarticle__background-2">
                     <header className="article__header">
                         <svg xmlns="http://www.w3.org/2000/svg"
-                            height="20px" version="1.1"
+                            height="30px" version="1.1"
                             viewBox="0 0 149 93">
                             <g>
                                 <path className="fill11" d="M10 40l130 0c13,0 13,13 0,13l-10 34 -9 6 -93 0 -9 -6 -9 -34c-13,0 -13,-13 0,-13z" />
@@ -69,7 +69,7 @@ function MainSection() {
                 < article className="mainarticle mainarticle__background-3" >
                     <header className="article__header">
                         <svg xmlns="http://www.w3.org/2000/svg"
-                            height="20px" version="1.1"
+                            height="30px" version="1.1"
                             viewBox="0 0 162 100">
                             <g>
                                 <path className="fill11" d="M51 19l0 -15 5 -4 96 0 5 4 0 74 -5 4 -146 0c-8,0 -8,-8 0,-8l0 -35 25 -20 20 0z" />
@@ -131,7 +131,7 @@ function MainSection() {
                 <article className="mainarticle mainarticle__background-4">
                 <header className="article__header">
                     <svg xmlns="http://www.w3.org/2000/svg"
-                        height="20px" version="1.1"
+                        height="30px" version="1.1"
                         viewBox="0 0 698 429">
                         <g>
                             <g>

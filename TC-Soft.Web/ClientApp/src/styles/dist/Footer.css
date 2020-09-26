@@ -19,8 +19,8 @@ a:hover {
 .social ul {
   display: flex;
   justify-content: flex-end;
-  border-top: 1px #000 solid;
-  /* padding-left: 0; */
+  border-top-style: solid;
+  border-top-color: #ccc;
 }
 .social li {
   display: inline-block;
