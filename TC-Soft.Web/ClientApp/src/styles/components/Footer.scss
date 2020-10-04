@@ -17,39 +17,19 @@ a:hover {
 
     ul {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
+        align-items: center;
         border-top-style: solid;
         border-top-color: #ccc;
     }
     li {
         display: inline-block;
-        margin: 0.5rem 1rem 0.5rem 0;
+        margin: 1.25rem 0.75rem 1.25rem 0;
         font-size: 1.25rem;
-    }
-
-    .fa-linkedin:hover {
-        color: #1d77b3;
-    }
-    .fa-github:hover {
-        /* color: #5CF64A; */
-        color: #06d6a0;
-    }
-    .fa-envelope:hover {
-        /* color: #FCBC27; */
-        color: #ffb563;
-    }
-    .fa-facebook:hover {
-        /* color: #2460F8; - orygin*/
-        /* color: #0091ad; */
-        color: #2e77ef;
-    }
-    .fa-youtube:hover {
-        color: #fa0019;
     }
 }
 
 .legal {
-    /* padding: 0.9375rem 1.875rem; */
     background-color: #eee;
     font-size: 0.7rem;
 
@@ -59,7 +39,6 @@ a:hover {
         list-style: none;
     }
     li {
-        // margin: 1rem 0.5rem;
         margin: 0.5rem 1rem 0.5rem 1rem;
         white-space: nowrap;
     }
@@ -69,5 +48,86 @@ a:hover {
     img {
         height: 20px;
         margin: 0.5rem 1rem 0rem 1rem;
+    }
+}
+
+.iconLinkedinFill {
+    .iconLinkedinFill1 {
+        fill:white;
+    }
+    
+    .iconLinkedinFill2 {
+        fill:black;
+    }
+    
+    &:hover {
+        .iconLinkedinFill2 {
+            fill: #3663AB;
+        }
+    }
+}
+
+.iconGitHUBFill {
+    iconGitHUBFill1 {
+        fill: #2F2C2A;
+    }
+}
+
+.iconYoutubeFill {
+
+    .iconYoutubeFill1 {
+        fill:black;
+        fill-rule:nonzero;
+    }
+    
+    .iconYoutubeFill2 {
+        fill:white;
+        fill-rule:nonzero;
+    }
+
+    &:hover {
+        .iconYoutubeFill1 {
+            fill:red;
+            fill-rule:nonzero;
+        }
+    }
+}
+
+.iconFacebookFill {
+    
+    .iconFacebookFill1 {
+        fill: black;
+        fill-rule:nonzero;
+    }
+    
+    .iconFacebookFill2 {
+        fill:white;
+        fill-rule:nonzero;
+    }
+
+    &:hover {
+        .iconFacebookFill1 {
+            fill:#1877F2;
+            fill-rule:nonzero;
+        }
+    }
+}
+
+.iconMailFill {
+    .iconMailFill1 {
+        fill:white;
+    }
+    
+    .iconMailFill2 {
+        fill:black;
+    }
+
+    &:hover {
+
+        .iconMailFill2 {
+            // fill : #E6AF2E;
+            fill : #ffb300;
+        }
+
     }
 }
