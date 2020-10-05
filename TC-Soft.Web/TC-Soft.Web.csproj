@@ -8,6 +8,7 @@
     <SpaRoot>ClientApp\</SpaRoot>
     <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
     <RootNamespace>TC_Soft.Web</RootNamespace>
+    <UserSecretsId>ea78f154-3080-4ad7-8e0c-376fac2c7932</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

@@ -13,7 +13,7 @@ import './styles/main.scss';
 function App() {
   return (
     <Router>
-      <React.Fragment>
+      <Fragment>
         <Switch>
           <Route exact path="/">
             <Home />
@@ -25,7 +25,7 @@ function App() {
             <Contact />
           </Route>
         </Switch>
-      </React.Fragment>
+      </Fragment>
     </Router>
   );
 }
