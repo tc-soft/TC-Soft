@@ -1,20 +1,123 @@
 import React from 'react';
 
-function ContactInfo() {
-    return (
-        <React.Fragment>
+class ContactInfo extends React.Component {
+    constructor(props) {
+        super(props);
+       
+        this.state = {
+            name: '',
+            email: '',
+            message: '',
+            buttonSendValue: 'Wyślij',
+            buttonResetValue: 'Reset'
+        };
+
+        this.handleNameChange = this.handleNameChange.bind(this);
+        this.handleEmailChange = this.handleEmailChange.bind(this);
+        this.handleMessageChange = this.handleMessageChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleReset = this.handleReset.bind(this);
+
+        this.inputNameRef = React.createRef();
+    }
+
+    handleNameChange = (event) => {
+        this.setState({ name: event.target.value });
+    }
+
+    handleEmailChange = (event) => {
+        this.setState({email: event.target.value});
+    }
+
+    handleMessageChange = (event) => {
+        this.setState({message: event.target.value});
+    }
+
+    handleSubmit = (event) => {
+        (
+            this.state.name.length > 0 &&
+            this.state.email.length > 0 &&
+            this.state.message.length > 0
+        )
+        ?
+        (alert('OK'))
+        :
+        (alert('Error'));
+        
+        // alert('Podano : ' + this.state.email);
+        event.preventDefault();
+    }
+
+    handleReset = (event) => {
+        this.setState({name: ''});
+        this.setState({email: ''});
+        this.setState({message: ''});
+
+        this.inputNameRef.current.focus();
+    }
+
+    componentDidMount() {
+        this.inputNameRef.current.focus();
+    }    
+
+    render() {
+        const buttonSendEnabled = !(
+            this.state.name.length > 0 &&
+            this.state.email.length > 0 &&
+            this.state.message.length > 0
+        );
+
+        const buttonResetEnabled = !(
+            this.state.name.length > 0 ||
+            this.state.email.length > 0 ||
+            this.state.message.length > 0
+        );            
+
+        return (
             <div className="contact">
-                <form className="contact__form" method="post" action="#">
+                <form className="contact__form" onSubmit={this.handleSubmit}>
                     <h3 className="contact__title">Formularz kontaktowy</h3>
 
-                    <input type="text" name="name" id="name" value="" placeholder="Imię" />
-                    <input type="email" name="email" id="email" value="" placeholder="Email" />
-                    <textarea name="textarea" id="textarea" placeholder="Treść" rows="6"></textarea>
+                    <input 
+                        type="text"
+                        placeholder="Imię"
+                        autoFocus="true"
+                        value={this.state.name}
+                        onChange={this.handleNameChange} 
+                        ref={this.inputNameRef}
+                    />
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        value={this.state.email}
+                        onChange={this.handleEmailChange}
+                    />
+
+                    <textarea
+                        placeholder="Treść"
+                        rows="6"
+                        value={this.state.message}
+                        onChange={this.handleMessageChange}
+                        >
+                    </textarea>
 
                     <div className="contact__buttons">
-                        <input type="submit" value="Wyślij" className="buttonSend" />
-                        <input type="reset" value="Reset" className="buttonReset" />
+                        <input
+                            className="buttonSend"
+                            type="submit"
+                            // disabled={buttonSendEnabled}
+                            value={this.state.buttonSendValue}
+                        />
+
+                        <input
+                            className="buttonReset"
+                            type="reset"
+                            disabled={buttonResetEnabled}
+                            value={this.state.buttonResetValue}
+                            onClick={this.handleReset}
+                        />
                     </div>
+
                 </form>
                 <section className="contact__form">
                     <h3 className="contact__title">Dane kontaktowe</h3>
@@ -48,7 +151,7 @@ function ContactInfo() {
                         EMAIL:office@tc-soft.pl
                         URL:http://www.tc-soft.pl
                         END:VCARD</desc>
-                        <g id="elements" fill="black" stroke="none">
+                        <g fill="black" stroke="none">
                             <rect x="0" y="0" width="6" height="6" />
                             <rect x="6" y="0" width="6" height="6" />
                             <rect x="12" y="0" width="6" height="6" />
@@ -1919,8 +2022,8 @@ function ContactInfo() {
                     </svg>
                 </section>
             </div>
-        </React.Fragment >
-    );
+        );
+    }
 }
 
 export default ContactInfo;
