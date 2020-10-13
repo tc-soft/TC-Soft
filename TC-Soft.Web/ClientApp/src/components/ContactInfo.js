@@ -9,7 +9,8 @@ class ContactInfo extends React.Component {
             email: '',
             message: '',
             buttonSendValue: 'Wyślij',
-            buttonResetValue: 'Reset'
+            buttonResetValue: 'Reset',
+            apiAddress: ''
         };
 
         this.handleNameChange = this.handleNameChange.bind(this);
@@ -34,18 +35,33 @@ class ContactInfo extends React.Component {
     }
 
     handleSubmit = (event) => {
-        (
-            this.state.name.length > 0 &&
-            this.state.email.length > 0 &&
-            this.state.message.length > 0
-        )
-        ?
-        (alert('OK'))
-        :
-        (alert('Error'));
-        
-        // alert('Podano : ' + this.state.email);
-        event.preventDefault();
+        if(this.state.name.length > 0 && this.state.email.length > 0 && this.state.message.length > 0) {
+            
+            fetch(this.state.apiAddress, {
+                method: 'post',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: this.state.name,
+                    email: this.state.email,
+                    message: this.state.message
+                })
+            })
+
+            .then(res => res.json())
+            .then(user => {
+                this.props.addUserToState(user);
+                this.props.toggle();
+            })
+            .catch(err => console.log(err));
+            
+            alert(this.props.location);
+        } else {
+            alert('z else Error');
+            console.log("Error");
+        }
+
     }
 
     handleReset = (event) => {
@@ -58,6 +74,8 @@ class ContactInfo extends React.Component {
 
     componentDidMount() {
         this.inputNameRef.current.focus();
+        const url = new URL(window.location.href);
+        this.setState({ apiAddress: `${url.protocol}//${url.hostname}:${url.port}/api${url.pathname}` });
     }    
 
     render() {
@@ -81,7 +99,7 @@ class ContactInfo extends React.Component {
                     <input 
                         type="text"
                         placeholder="Imię"
-                        autoFocus="true"
+                        autoFocus={true}
                         value={this.state.name}
                         onChange={this.handleNameChange} 
                         ref={this.inputNameRef}
@@ -105,7 +123,7 @@ class ContactInfo extends React.Component {
                         <input
                             className="buttonSend"
                             type="submit"
-                            // disabled={buttonSendEnabled}
+                            disabled={buttonSendEnabled}
                             value={this.state.buttonSendValue}
                         />
 
@@ -117,7 +135,6 @@ class ContactInfo extends React.Component {
                             onClick={this.handleReset}
                         />
                     </div>
-
                 </form>
                 <section className="contact__form">
                     <h3 className="contact__title">Dane kontaktowe</h3>

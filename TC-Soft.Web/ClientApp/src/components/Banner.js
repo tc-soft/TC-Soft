@@ -34,8 +34,8 @@ function Banner() {
                         <polygon fill="url(#id0)" points="620,160 760,1 1032,1 1032,160" />
                     </g>
 
-                    <text x="180" y="76" class="fntSVG1">Outsourcing IT dla firm</text>
-                    <text x="180" y="103" class="fntSVG2">Budowa i utrzymanie małych serwerowni, dostawa sprzętu.</text>
+                    <text x="180" y="76" className="fntSVG1">Outsourcing IT dla firm</text>
+                    <text x="180" y="103" className="fntSVG2">Budowa i utrzymanie małych serwerowni, dostawa sprzętu.</text>
                     
                     {/* SVG HomeWork-01 */}
                     <g>
