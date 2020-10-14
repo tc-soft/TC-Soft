@@ -5,6 +5,9 @@ using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
+using TC_Soft.Core.Options;
+using TC_Soft.Core.Services;
 
 namespace TC_Soft.Web
 {
@@ -20,7 +23,11 @@ namespace TC_Soft.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //==================================================================
+            services.Configure<EmailOptions>(Configuration.GetSection("EmailOptions"));
 
+            services.AddScoped<IEmailService, EmailService>();
+            //==================================================================
             services.AddControllersWithViews();
 
             // In production, the React files will be served from this directory
