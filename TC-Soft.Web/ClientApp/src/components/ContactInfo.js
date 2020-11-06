@@ -38,9 +38,10 @@ class ContactInfo extends React.Component {
         if(this.state.name.length > 0 && this.state.email.length > 0 && this.state.message.length > 0) {
             
             fetch(this.state.apiAddress, {
-                method: 'post',
+                method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
                 },
                 body: JSON.stringify({
                     name: this.state.name,
@@ -48,20 +49,18 @@ class ContactInfo extends React.Component {
                     message: this.state.message
                 })
             })
+                .then((response) => response.json())
 
-            .then(res => res.json())
-            .then(user => {
-                this.props.addUserToState(user);
-                this.props.toggle();
-            })
-            .catch(err => console.log(err));
-            
-            alert(this.props.location);
+                .then((data) => {
+                    console.log("messages", data);
+                })
+
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
         } else {
-            alert('z else Error');
-            console.log("Error");
+            alert('Nie wszystkie pola zostały wypełnione.');
         }
-
     }
 
     handleReset = (event) => {
@@ -75,7 +74,8 @@ class ContactInfo extends React.Component {
     componentDidMount() {
         this.inputNameRef.current.focus();
         const url = new URL(window.location.href);
-        this.setState({ apiAddress: `${url.protocol}//${url.hostname}:${url.port}/api${url.pathname}` });
+        const port = (url.port ? `:${url.port}` : "");
+        this.setState({ apiAddress: `${url.protocol}//${url.hostname}${port}/api${url.pathname}` });
     }    
 
     render() {
@@ -101,7 +101,7 @@ class ContactInfo extends React.Component {
                         placeholder="Imię"
                         autoFocus={true}
                         value={this.state.name}
-                        onChange={this.handleNameChange} 
+                        onChange={this.handleNameChange}
                         ref={this.inputNameRef}
                     />
                     <input

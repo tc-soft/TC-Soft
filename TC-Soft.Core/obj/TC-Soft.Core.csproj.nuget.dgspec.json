@@ -41,13 +41,25 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "IpStack": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[2.9.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
             "Microsoft.Extensions.Options": {
               "target": "Package",
               "version": "[3.1.9, )"
             },
-            "NETCore.MailKit": {
+            "SendGrid": {
               "target": "Package",
-              "version": "[2.0.3, )"
+              "version": "[9.21.0, )"
             }
           },
           "imports": [

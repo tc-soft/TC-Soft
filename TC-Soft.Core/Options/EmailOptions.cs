@@ -1,18 +1,20 @@
-﻿using System;
-
-namespace TC_Soft.Core.Options
+﻿namespace TC_Soft.Core.Options
 {
     public class EmailOptions
     {
-        public String FromName { get; set; }
-        public String FromAddress { get; set; }
+        public string FromName { get; set; }
+        public string FromAddress { get; set; }
 
-        public String LocalDomain { get; set; }
+        public string MailServerAddress { get; set; }
+        public int MailServerPort { get; set; }
+        public string Encryption { get; set; }
 
-        public String MailServerAddress { get; set; }
-        public String MailServerPort { get; set; }
+        public string UserId { get; set; }
+        public string UserPassword { get; set; }
 
-        public String UserId { get; set; }
-        public String UserPassword { get; set; }
+        public string ToAddress { get; set; }
+        public string Subject { get; set; }
+
+        public string Template { get; set; }
     }
 }

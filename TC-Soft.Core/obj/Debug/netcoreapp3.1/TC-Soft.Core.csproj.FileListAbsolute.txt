@@ -1,9 +1,9 @@
 D:\TC-Soft\TC-Soft.Core\bin\Debug\netcoreapp3.1\TC-Soft.Core.deps.json
 D:\TC-Soft\TC-Soft.Core\bin\Debug\netcoreapp3.1\TC-Soft.Core.dll
+D:\TC-Soft\TC-Soft.Core\bin\Debug\netcoreapp3.1\TC-Soft.Core.pdb
 D:\TC-Soft\TC-Soft.Core\obj\Debug\netcoreapp3.1\TC-Soft.Core.csprojAssemblyReference.cache
 D:\TC-Soft\TC-Soft.Core\obj\Debug\netcoreapp3.1\TC-Soft.Core.AssemblyInfoInputs.cache
 D:\TC-Soft\TC-Soft.Core\obj\Debug\netcoreapp3.1\TC-Soft.Core.AssemblyInfo.cs
-D:\TC-Soft\TC-Soft.Core\bin\Debug\netcoreapp3.1\TC-Soft.Core.pdb
+D:\TC-Soft\TC-Soft.Core\obj\Debug\netcoreapp3.1\TC-Soft.Core.csproj.CoreCompileInputs.cache
 D:\TC-Soft\TC-Soft.Core\obj\Debug\netcoreapp3.1\TC-Soft.Core.dll
 D:\TC-Soft\TC-Soft.Core\obj\Debug\netcoreapp3.1\TC-Soft.Core.pdb
-D:\TC-Soft\TC-Soft.Core\obj\Debug\netcoreapp3.1\TC-Soft.Core.csproj.CoreCompileInputs.cache

@@ -135,13 +135,13 @@ function MainSection() {
                         viewBox="0 0 698 429">
                         <g>
                             <g>
-                                <ellipse class="fill11" cx="174" cy="265" rx="174" ry="164" />
-                                <ellipse class="fill11" cx="551" cy="291" rx="147" ry="138" />
-                                <ellipse class="fill11" cx="354" cy="198" rx="210" ry="198" />
-                                <rect class="fill11" x="169" y="359" width="379.046" height="70.4959" />
+                                <ellipse className="fill11" cx="174" cy="265" rx="174" ry="164" />
+                                <ellipse className="fill11" cx="551" cy="291" rx="147" ry="138" />
+                                <ellipse className="fill11" cx="354" cy="198" rx="210" ry="198" />
+                                <rect className="fill11" x="169" y="359" width="379.046" height="70.4959" />
                             </g>
-                            <polygon class="fill10" points="312,252 232,359 153,252 206,252 206,143 259,143 259,252 " />
-                            <polygon class="fill12" points="545,251 465,143 386,251 439,251 439,359 492,359 492,251 " />
+                            <polygon className="fill10" points="312,252 232,359 153,252 206,252 206,143 259,143 259,252 " />
+                            <polygon className="fill12" points="545,251 465,143 386,251 439,251 439,359 492,359 492,251 " />
                         </g>
                     </svg>
 

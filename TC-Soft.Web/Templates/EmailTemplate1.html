@@ -1,0 +1,102 @@
+﻿<html lang="pl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+        HTML {
+            background-color: #fefefe;
+        }
+
+        .tableMain {
+            /*font-size: medium;*/
+            border-spacing: 0;
+        }
+
+            .tableMain .description {
+                width: 4em;
+                text-align: right;
+            }
+
+            .tableMain .descriptionMessage {
+                width: 4em;
+                text-align: right;
+                vertical-align: top;
+            }
+
+            .tableMain.value {
+                text-align: left;
+            }
+
+        .tableIpStack {
+            font-size: x-small;
+            padding: 3px;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .tableIpStack th {
+            background-color: #e4e4e4;
+            border: 1px solid #D1D1D1;
+            text-align: center;
+            height: 1.2em;
+        }
+
+        .tableIpStack td {
+            background-color: #f7f7f7;
+            border: 1px solid #D1D1D1;
+            padding: 0 0.5em;
+            height: 1.1em;
+        }
+
+        .tableIpStack .description {
+            width: 6em;
+            text-align: left;
+        }
+
+        .tableIpStack .valueAddressIP {
+            text-align: left;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="tableMain">
+        <tr>
+            <td class="description">Imię : </td>
+            <td class="value"><strong>{webContact.Name}</strong></td>
+        </tr>
+        <tr>
+            <td class="description">Email : </td>
+            <td class="value">{webContact.Email}</td>
+        </tr>
+        <tr>
+            <td class="descriptionMessage">Treść : </td>
+            <td class="value">{webContact.Message}</td>
+        </tr>
+    </table>
+    <br>
+    <table class="tableIpStack">
+        <thead>
+            <tr>
+                <th>IPStack</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="description">Adres IP</td>
+                <td class="valueAddressIP">{webContact.SingleDetails.Ip}</td>
+            </tr>
+            <tr>
+                <td class="description">Miasto</td>
+                <td class="valueCity">{webContact.SingleDetails.City}</td>
+            </tr>
+            <tr>
+                <td class="description">Kraj</td>
+                <td class="valueCountry"><strong>{webContact.SingleDetails.CountryName}</strong></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

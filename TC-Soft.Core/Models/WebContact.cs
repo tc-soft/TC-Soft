@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using IpStack.Models;
 
 namespace TC_Soft.Core.Models
 {
@@ -10,5 +7,7 @@ namespace TC_Soft.Core.Models
         public string Name { get; set; }
         public string Email { get; set; }
         public string Message { get; set; }
+        public IpAddressDetails SingleDetails { get; set; }
+        public string EmailTemplate { get; set; }
     }
 }

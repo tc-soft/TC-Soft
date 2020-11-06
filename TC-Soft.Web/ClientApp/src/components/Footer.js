@@ -109,7 +109,7 @@ function Footer() {
                     <ul>
                         <li><a href="#top">Terms &amp; Conditions</a></li>
                         <li><a href="#top">Privacy Policy</a></li>
-                        <li>&copy; 2020.09 TC-Soft/SC-Design</li>
+                        <li>&copy; 2020.09 TC-Soft / Anivers Design</li>
                     </ul>
                 </div >
             </footer >

@@ -1,11 +1,9 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
 using TC_Soft.Core.Options;
 using TC_Soft.Core.Services;
 
@@ -25,6 +23,8 @@ namespace TC_Soft.Web
         {
             //==================================================================
             services.Configure<EmailOptions>(Configuration.GetSection("EmailOptions"));
+            services.Configure<SendGridOptions>(Configuration.GetSection("SendGridOptions"));
+            services.Configure<IpStackOptions>(Configuration.GetSection("IpStackOptions"));
 
             services.AddScoped<IEmailService, EmailService>();
             //==================================================================
