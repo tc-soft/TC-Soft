@@ -1,14 +1,14 @@
 import React from 'react';
 
 import Header from '../components/Header';
-import ContactInfo from '../components/ContactInfo';
+import ContactBody from '../components/ContactBody';
 import Footer from '../components/Footer';
 
 function Contact() {
   return (
     <React.Fragment>
         <Header />
-        <ContactInfo />
+        <ContactBody />
         <Footer />
     </React.Fragment>
   );
