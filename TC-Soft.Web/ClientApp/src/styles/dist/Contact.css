@@ -23,6 +23,15 @@
 .contact__helpdesk {
   color: blue;
 }
+.contact__buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: stretch;
+  padding-top: 1rem;
+}
 .contact input {
   padding: 0.3em;
   margin-top: 0.3rem;
@@ -35,14 +44,14 @@
   height: 6em;
   resize: vertical;
 }
-.contact__buttons {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: baseline;
-  align-content: stretch;
-  padding-top: 1rem;
+.contact__ValidationError {
+  outline: none !important;
+  border: 1px solid red;
+}
+.contact__ValidationError:focus {
+  outline: none !important;
+  border: 2px solid red;
+  box-shadow: 0 0 3px #719ECE;
 }
 .contact__errorMessage {
   height: 1em;
@@ -57,7 +66,7 @@
   cursor: pointer;
   width: 5rem;
   background-color: white;
-  border: 2px solid #4CAF50;
+  border: 1.5px solid #4CAF50;
 }
 
 .buttonReset {
@@ -66,5 +75,5 @@
   cursor: pointer;
   width: 5rem;
   background-color: white;
-  border: 2px solid #f44336;
+  border: 1.5px solid black;
 }
