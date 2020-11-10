@@ -61,23 +61,33 @@
 
     &__ValidationError {
       outline: none !important;
-      border:1px solid red;
+      // border:1px solid red;
     }
 
     &__ValidationError:focus {
-        outline: none !important;
+        // outline: none !important;
         border:2px solid red;
-        box-shadow: 0 0 3px #719ECE;
+        box-shadow: 0 0 3px #979797;
     }
 
     &__errorMessage {
-      height: 1em;
-
-      font-size: 0.7em;
-      color: #e53e3e;
-      // margin-top: 0.25rem;
+      display: flex;
+      align-items: center;     
+  
+      height: 0.8rem;
       margin-bottom: 0.3rem;
+      
+      svg {
+        margin-right: 0.3rem;
+      }
+
+      p {
+        font-size: 0.7em;
+        color: #e53e3e;
+      }
     }
+
+
 }
   
 .buttonSend {

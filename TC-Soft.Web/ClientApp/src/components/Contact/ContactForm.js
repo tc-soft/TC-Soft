@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik, Form, Field } from 'formik';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
 function ContactForm() {
@@ -9,13 +9,14 @@ function ContactForm() {
                 initialValues={{ name: '', email: '', message: '' }}
                 validationSchema={Yup.object({
                     name: Yup.string()
-                        .required('pole wymagane')    
+                        .required('Pole wymagane')    
+                        .min(2, 'Pole musi zawierać imię')
                         .max(20, 'Pole może mieć maksymalnie 20 znaków'),
                     email: Yup.string()
-                        .required('pole wymagane')
+                        .required('Pole wymagane')
                         .email('nieprawidłowy adres Email'),
                     message: Yup.string()
-                        .required('pole wymagane')    
+                        .required('Pole wymagane')    
                         .max(1024, 'Pole może mieć maksymalnie 1024 znaki'),
                 })}
                 
@@ -28,7 +29,7 @@ function ContactForm() {
                     }, 400);
                 }}
             >
-            {({ touched, errors, dirty, isValid }) => (
+            {({ values, touched, errors, dirty, isValid }) => (
                 <Form className="contact__form">
                     <h3 className="contact__title">Formularz kontaktowy</h3>
 
@@ -36,38 +37,99 @@ function ContactForm() {
                         name="name"
                         type="text"
                         placeholder="Imię"
-                        className={errors.name && "contact__ValidationError"}
+                        className={errors.name && (touched.name || values.name) && "contact__ValidationError"}
                     />
-                    {errors.name ? 
-                        (<p className="contact__errorMessage">{errors.name}</p>)
+
+                    {errors.name && (touched.name || values.name)  ? 
+                        (
+                            <div className="contact__errorMessage">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                height="10px" version="1.1"
+                                fill="none"
+                                viewBox="0 0 30 30"
+                                >
+                                    <g>
+                                        <path d="M15 0C6.72 0 0 6.72 0 15C0 23.28 6.72 30 15 30C23.28 30 30 23.28 30 15C30 6.72 23.28 0 15 0ZM15 16.5C14.175 16.5 13.5 15.825 13.5 15V9C13.5 8.175 14.175 7.5 15 7.5C15.825 7.5 16.5 8.175 16.5 9V15C16.5 15.825 15.825 16.5 15 16.5ZM16.5 22.5H13.5V19.5H16.5V22.5Z"
+                                        fill="#E85C66"
+                                    />
+                                    </g>
+                                </svg>
+                                
+                                <p>{errors.name}</p>
+                            </div>
+                        )
                         :
-                        (<p className="contact__errorMessage"></p>)
+                        (
+                            <div className="contact__errorMessage">
+                                <p></p>
+                            </div>
+                        )
                     }
 
                     <Field 
                         name="email"
                         type="email"
-                        placeholder="Email"
-                        className={errors.email && "contact__ValidationError"}
+                        placeholder="E-mail"
+                        className={errors.email && (touched.email || values.email) && "contact__ValidationError"}
                     />
 
-                    {errors.email ? 
-                        (<p className="contact__errorMessage">{errors.email}</p>)
+                    {errors.email && (touched.email || values.email) ? 
+                        (
+                            <div className="contact__errorMessage">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                height="10px" version="1.1"
+                                fill="none"
+                                viewBox="0 0 30 30"
+                                >
+                                    <g>
+                                        <path d="M15 0C6.72 0 0 6.72 0 15C0 23.28 6.72 30 15 30C23.28 30 30 23.28 30 15C30 6.72 23.28 0 15 0ZM15 16.5C14.175 16.5 13.5 15.825 13.5 15V9C13.5 8.175 14.175 7.5 15 7.5C15.825 7.5 16.5 8.175 16.5 9V15C16.5 15.825 15.825 16.5 15 16.5ZM16.5 22.5H13.5V19.5H16.5V22.5Z"
+                                        fill="#E85C66"
+                                    />
+                                    </g>
+                                </svg>
+                                
+                                <p>{errors.email}</p>
+                            </div>
+                        )
                         :
-                        (<p className="contact__errorMessage"></p>)
+                        (
+                            <div className="contact__errorMessage">
+                                <p></p>
+                            </div>
+                        )
                     }
 
                     <Field 
                         name="message"
                         as="textarea"
                         placeholder="Treść"
-                        className={errors.message && "contact__ValidationError"}
+                        className={errors.message && (touched.message || values.message) && "contact__ValidationError"}
                     />
 
-                    {errors.message ? 
-                        (<p className="contact__errorMessage">{errors.message}</p>)
+                    {errors.message && (touched.message || values.message)  ? 
+                        (
+                            <div className="contact__errorMessage">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                height="10px" version="1.1"
+                                fill="none"
+                                viewBox="0 0 30 30"
+                                >
+                                    <g>
+                                        <path d="M15 0C6.72 0 0 6.72 0 15C0 23.28 6.72 30 15 30C23.28 30 30 23.28 30 15C30 6.72 23.28 0 15 0ZM15 16.5C14.175 16.5 13.5 15.825 13.5 15V9C13.5 8.175 14.175 7.5 15 7.5C15.825 7.5 16.5 8.175 16.5 9V15C16.5 15.825 15.825 16.5 15 16.5ZM16.5 22.5H13.5V19.5H16.5V22.5Z"
+                                        fill="#E85C66"
+                                    />
+                                    </g>
+                                </svg>
+                                
+                                <p>{errors.message}</p>
+                            </div>
+                        )
                         :
-                        (<p className="contact__errorMessage"></p>)
+                        (
+                            <div className="contact__errorMessage">
+                                <p></p>
+                            </div>
+                        )
                     }
 
                     <div className="contact__buttons">

@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TC-Soft.Web", "TC-Soft.Web\TC-Soft.Web.csproj", "{9EE2C3AA-608D-4072-8EF4-A9F7D2DDCADA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TC-Soft.Core", "TC-Soft.Core\TC-Soft.Core.csproj", "{C5F09346-EB48-440D-8741-9073A44B2EE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TC-Soft.Core", "TC-Soft.Core\TC-Soft.Core.csproj", "{C5F09346-EB48-440D-8741-9073A44B2EE7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
