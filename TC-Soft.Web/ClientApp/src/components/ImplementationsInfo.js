@@ -80,14 +80,6 @@ function ImplementationsInfo() {
                         <td>12.2019 r.</td>
                     </tr>
                 </table>
-                <p>
-                    Wykonuje usługi IT na terenie miasta Świdwin i okolic wspierając obsługę informatyczną w firmach. Zakres
-                    wykonywanych prac to infrastruktura sieciowa, serwery, pamięci masowe, komputery klienckie.
-                    Wykonuję zadania, takie jak instalowanie/konfiguracje/utrzymywanie systemów operacyjnych/oprogramowania,
-                    inwentaryzowanie sprzętu i oprogramowania.
-                    Utrzymywanie popularnych na rynku aplikacji Sage/Comarch/WAPRO/InsErt. Działam w oparciu o stałe Umowy.
-        </p>
-                <br />
             </section>
         </React.Fragment >
     );

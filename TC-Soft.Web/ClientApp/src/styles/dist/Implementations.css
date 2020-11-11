@@ -1,0 +1,42 @@
+.implementations {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 2rem auto;
+  max-width: 1000px;
+  background-color: #f5f5f5;
+}
+.implementations__table {
+  width: 100%;
+}
+.implementations__company {
+  width: 25%;
+}
+.implementations__detail {
+  width: 65%;
+}
+.implementations__date {
+  width: 10%;
+}
+.implementations th {
+  padding: 0.5em;
+  border: 0.1em solid white;
+  background-color: #eff6fd;
+}
+.implementations tr:nth-child(even) {
+  background-color: #fff;
+}
+.implementations tr td:first-child {
+  text-align: center;
+}
+.implementations tr:hover {
+  background-color: #eee;
+}
+.implementations tr {
+  transition: 0.2s;
+}
+.implementations td {
+  padding: 0.6em;
+}
