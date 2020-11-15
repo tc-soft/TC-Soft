@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 
 function ContactForm() {
@@ -21,12 +21,34 @@ function ContactForm() {
                 })}
                 
                 onSubmit={(values, { setSubmitting, resetForm }) => {
-                    setTimeout(() => {
-                        alert(JSON.stringify(values, null, 2));
-                        
+                    const url = new URL(window.location.href);
+                    const port = (url.port ? `:${url.port}` : "");
+                    const apiAddress = `${url.protocol}//${url.hostname}${port}/api${url.pathname}`;
+
+                    fetch(apiAddress, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            name: values.name,
+                            email: values.email,
+                            message: values.message
+                        })
+                    })
+                    .then((response) => response.json())
+
+                    .then((data) => {
+                        console.log("messages", data);
                         setSubmitting(false);
-                        resetForm();
-                    }, 400);
+                    })
+
+                    .catch((error) => {
+                        console.error('Error:', error);
+                    });
+
+                    resetForm();
                 }}
             >
             {({ values, touched, errors, dirty, isValid }) => (

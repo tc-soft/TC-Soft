@@ -12,8 +12,8 @@ function ContactInfo() {
                     <strong>NIP : </strong>PL6721373450<br /><br />
                     <strong>Telefon : </strong>502600121<br />
                     <strong>E-mail : </strong>office@tc-soft.pl<br />
-                    <strong>Bank : </strong>PKO INTELIGO<br />
-                    <strong>Nr rachunku bankowego : </strong>51 1020 21234 241 12412 1241 124
+                    <strong>Bank : </strong>PKO BP SA CBE INTELIGO<br />
+                    <strong>Nr rachunku bankowego : </strong>50 1020 5558 1111 1182 9650 0022
                 </p>
                 <br />
                 <h3 className="contact__helpdesk">HELP DESK</h3>
