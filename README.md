@@ -5,7 +5,7 @@ This repo contains the code to build the .NET runtime, libraries and shared host
 To start FrontEnd project clone this repo, install depdencies, then start the npm start script process with the following :
 
 ```
-git clone https://github.com/ilkeraltin/react-with-instagram-api.git .
+git clone https://github.com/tc-soft/TC-Soft.git .
 ```
 
 ```

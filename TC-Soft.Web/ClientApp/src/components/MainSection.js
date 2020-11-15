@@ -61,8 +61,8 @@ function MainSection() {
                         na rynku.
                         Sprzedaję licencje na oprogramowanie firm : Microsoft, ESET, InsErt
                         Dla sprzedaży z planu Microsoft 365 / Office 365 jest wymagane podpisanie Umowy Microsoft dot. dostarczania
-                        usług chmurowych.
-                        Sklepu internetowego nie posiadam, stąd prosba o kontakt.
+                        usług chmurowych.<br/><br/>
+                        <img src="./Microsoft_365_logo.png" alt="Microsoft365" height="20px"></img><br/>
                 </p>
                 </article >
 
