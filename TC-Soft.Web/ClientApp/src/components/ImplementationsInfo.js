@@ -5,11 +5,11 @@ function ImplementationsInfo() {
         <React.Fragment>
             <section className="implementations">
                 <table className="implementations__table">
-                    <tr>
+                    <thead>
                         <th className="implementations__company">Nazwa firmy</th>
                         <th className="implementations__detail">Opis wdrożenia</th>
                         <th className="implementations__date">Data</th>
-                    </tr>
+                    </thead>
                     <tr>
                         <td>Fleisch Mannschaft Polska Sp. z o.o. Świdwin</td>
                         <td>Budowa sieci komputerowej. Wdrożenie serwera IBM xSeries. Migracja danych.</td>
