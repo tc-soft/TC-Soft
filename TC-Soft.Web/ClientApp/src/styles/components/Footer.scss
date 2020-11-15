@@ -31,20 +31,38 @@ a:hover {
 
 .legal {
     background-color: #eee;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    
 
     ul {
         display: flex;
         width: 100%;
         list-style: none;
+        align-items: center;
+        height: 3rem;
     }
+
     li {
         margin: 0.5rem 1rem 0.5rem 1rem;
-        white-space: nowrap;
+        
+        a {
+            display: flex;
+            align-items: center;
+            // justify-content: center;
+            // background-color: red;
+            height: 100%;
+            text-decoration: none;
+
+            svg {
+                margin: 0 0 0.1rem 0.2rem;
+             }
+         }
     }
+
     li:nth-last-child(2) {
         flex: 1;
     }
+
     img {
         height: 20px;
         margin: 0.5rem 1rem 0rem 1rem;
@@ -131,3 +149,4 @@ a:hover {
 
     }
 }
+
