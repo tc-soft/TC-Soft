@@ -1,0 +1,25 @@
+.gdpr {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 2rem auto;
+  max-width: 1000px;
+  background-color: #f5f5f5;
+}
+.gdpr h3 {
+  flex: 100%;
+  padding: 0 0 1rem 0;
+}
+.gdpr p {
+  flex: 100%;
+}
+.gdpr__mainPoint {
+  margin: 0 0 0 1rem;
+  list-style-type: decimal;
+}
+.gdpr__subPoint {
+  margin: 0 0 0 1rem;
+  list-style-type: lower-latin;
+}

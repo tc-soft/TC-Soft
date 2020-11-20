@@ -8,6 +8,7 @@ import {
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Implementations from './pages/Implementations';
+import Gdpr from './pages/Gdpr';
 import './styles/main.scss';
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route exact path="/implementations">
             <Implementations />
+          </Route>
+          <Route exact path="/gdpr">
+            <Gdpr />
           </Route>
           <Route exact path="/contact">
             <Contact />

@@ -121,7 +121,8 @@ function Footer() {
                                 </svg>
                             </a>
                         </li>
-                        <li><a href="#top">Privacy Policy</a></li>
+                        <li>
+                        <Link to="/gdpr">RODO</Link></li>
                         <li>&copy; 2020.11 TC-Soft / Anivers Design</li>
                     </ul>
                 </div >

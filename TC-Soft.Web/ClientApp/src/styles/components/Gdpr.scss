@@ -1,0 +1,48 @@
+.gdpr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2rem auto;
+    max-width: 1000px;
+    background-color: #f5f5f5;
+    //background-color: rgb(235, 235, 235);
+    //background-color: #fff;
+
+    h3 {
+        flex: 100%;
+        padding: 0 0 1rem 0;
+        // text-align: center;
+    }
+
+    p {
+        //padding: 0 0 1rem 0;
+        flex: 100%;
+        //text-align: justify;
+        //text-indent: 3%;
+        //line-height: 1.4rem;
+    }
+
+    &__mainPoint {
+        margin: 0 0 0 1rem;
+        list-style-type: decimal;
+
+        li {
+            // margin-top: 0.5rem;
+            // text-align: justify;
+        }
+    }
+
+    &__subPoint {
+        margin: 0 0 0 1rem;
+        list-style-type: lower-latin;
+
+        li {
+            // margin-top: 0.5rem;
+            // text-align: justify;
+        }
+    }
+
+}
+
