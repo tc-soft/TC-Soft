@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .gdpr {
   display: flex;
   flex-direction: row;
@@ -6,20 +7,37 @@
   align-items: flex-start;
   margin: 2rem auto;
   max-width: 1000px;
-  background-color: #f5f5f5;
 }
 .gdpr h3 {
   flex: 100%;
   padding: 0 0 1rem 0;
+  text-align: center;
 }
 .gdpr p {
   flex: 100%;
+  text-align: justify;
+  line-height: 1.4rem;
 }
 .gdpr__mainPoint {
   margin: 0 0 0 1rem;
   list-style-type: decimal;
 }
+.gdpr__mainPoint li {
+  margin-top: 1.5rem;
+  text-align: justify;
+  line-height: 1.4rem;
+}
 .gdpr__subPoint {
   margin: 0 0 0 1rem;
-  list-style-type: lower-latin;
+  list-style-type: none;
+}
+.gdpr__subPoint li {
+  margin-top: 0.5rem;
+}
+.gdpr__subPoint li::before {
+  content: "•";
+  color: #6b6b6b;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }

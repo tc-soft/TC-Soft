@@ -5,7 +5,7 @@ function GdprInfo() {
         <React.Fragment>
             <section className="gdpr">
 
-                <h3>Klauzula infrormacyjna - formularz kontaktowy</h3>
+                <h3>Klauzula informacyjna - formularz kontaktowy</h3>
 
                 <p>
                     Zgodnie z art. 13 ust. 1 i ust. 2 rozporządzenia Parlamentu Europejskiego i Rady UE 
@@ -17,7 +17,7 @@ function GdprInfo() {
 
                 <ul className="gdpr__mainPoint">
                     <li>
-                        Administratorem Pani/Pana danych jest firma<br/>
+                        Administratorem Pani/Pana danych jest firma&nbsp;
                         <strong>
                         Usługi Informatyczne - Administracja Sieci Komputerowych Tadeusz Ciszewski
                         </strong>
