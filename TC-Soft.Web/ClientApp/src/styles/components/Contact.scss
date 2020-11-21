@@ -11,11 +11,14 @@
   
     &__form {
       display: flex;
+      flex: 25%;
       flex-direction: column;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       justify-content: flex-start;
       align-items: stretch;
       align-content: stretch;
+
+      // max-width: 300px;
     }
   
     &__title {
@@ -76,6 +79,13 @@
         font-size: 0.7em;
         color: #e53e3e;
       }
+    }
+
+    &__info {
+      flex: 50%;
+      padding: 0 1rem;
+      // min-width: 400px;
+      // flex-wrap: wrap;
     }
 }
   

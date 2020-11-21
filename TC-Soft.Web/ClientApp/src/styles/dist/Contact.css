@@ -1,0 +1,89 @@
+.contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 1rem;
+  margin: 1rem auto;
+  max-width: 1000px;
+  background-color: #fff;
+}
+.contact__form {
+  display: flex;
+  flex: 25%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+.contact__title {
+  padding: 0 0 0.5rem 0;
+}
+.contact__helpdesk {
+  color: blue;
+}
+.contact__buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: stretch;
+  padding-top: 1rem;
+}
+.contact input {
+  padding: 0.3em;
+  margin-top: 0.3rem;
+  margin-bottom: 0.1rem;
+}
+.contact textarea {
+  padding: 0.3em;
+  margin-top: 0.3rem;
+  margin-bottom: 0.1rem;
+  height: 6em;
+  resize: vertical;
+}
+.contact__ValidationError {
+  outline: none !important;
+}
+.contact__ValidationError:focus {
+  border: 2px solid red;
+  box-shadow: 0 0 3px #979797;
+}
+.contact__errorMessage {
+  display: flex;
+  align-items: center;
+  height: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+.contact__errorMessage svg {
+  margin-right: 0.3rem;
+}
+.contact__errorMessage p {
+  font-size: 0.7em;
+  color: #e53e3e;
+}
+.contact__info {
+  flex: 50%;
+  padding: 0 1rem;
+}
+
+.buttonSend {
+  padding: 0.2rem 0;
+  font-size: 0.9rem;
+  cursor: pointer;
+  width: 5rem;
+  background-color: white;
+  border: 1.5px solid #4CAF50;
+}
+
+.buttonReset {
+  padding: 0.2rem 0;
+  font-size: 0.9rem;
+  cursor: pointer;
+  width: 5rem;
+  background-color: white;
+  border: 1.5px solid black;
+}

@@ -3,7 +3,7 @@ import React from 'react';
 function ContactInfo() {
     return (
         <React.Fragment>
-            <section className="contact__form">
+            <section className="contact__info">
                 <h3 className="contact__title">Dane kontaktowe</h3>
                 <p>
                     <strong>Nazwa firmy : </strong>Uslugi Informatyczne - Administracja Sieci Komputerowych<br />

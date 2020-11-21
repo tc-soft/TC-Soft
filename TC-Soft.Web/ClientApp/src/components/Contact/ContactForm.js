@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 
@@ -6,7 +7,12 @@ function ContactForm() {
     return (
         <React.Fragment>
             <Formik
-                initialValues={{ name: '', email: '', message: '' }}
+                initialValues={{ 
+                    name: '',
+                    email: '',
+                    message: '',
+                    toggle: false
+                }}
                 validationSchema={Yup.object({
                     name: Yup.string()
                         .required('Pole wymagane')    
@@ -153,6 +159,17 @@ function ContactForm() {
                             </div>
                         )
                     }
+
+                    <label className="">
+                        <Field 
+                            type="checkbox"
+                            name="toggle"
+                        />
+                        {/* {`${values.toggle}`} */}
+                        &nbsp;Zapoznałem się z treścią&nbsp;
+                        <Link to="/gdpr">klauzuli informacyjnej</Link>
+                        &nbsp;dotyczącej ochrony moich danych osobowych
+                    </label>
 
                     <div className="contact__buttons">
                         <button type="submit" className="buttonSend" disabled={!(isValid && dirty)}>Wyślij</button>
