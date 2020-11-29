@@ -52,7 +52,11 @@
       margin-bottom: 0.1rem;
       height: 6em;
       resize: vertical;
-    }    
+    }
+
+    &__rodo {
+      font-size: 0.9rem;
+    }
 
     &__ValidationError {
       outline: none !important;

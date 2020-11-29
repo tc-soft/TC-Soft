@@ -47,8 +47,8 @@ namespace TC_Soft.Web.Controllers
                 Body = _emailService.CreateBody(webContact)
             };
 
-            //await _emailService.SendAsync(request);
-            //await _emailService.SendGridAsync(request);
+            await _emailService.SendAsync(request);
+            await _emailService.SendGridAsync(request);
 
             //https://www.pragimtech.com/blog/blazor/post-in-aspnet-core-rest-api/
 

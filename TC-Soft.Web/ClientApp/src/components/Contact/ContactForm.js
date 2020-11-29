@@ -24,6 +24,9 @@ function ContactForm() {
                     message: Yup.string()
                         .required('Pole wymagane')    
                         .max(1024, 'Pole może mieć maksymalnie 1024 znaki'),
+                    toggle: Yup.boolean()
+                        .required("Pole musi być zaznaczone")
+                        .oneOf([true], "Pole musi być zaznaczone")
                 })}
                 
                 onSubmit={(values, { setSubmitting, resetForm }) => {
@@ -160,12 +163,11 @@ function ContactForm() {
                         )
                     }
 
-                    <label className="">
+                    <label className="contact__rodo">
                         <Field 
                             type="checkbox"
                             name="toggle"
                         />
-                        {/* {`${values.toggle}`} */}
                         &nbsp;Zapoznałem się z treścią&nbsp;
                         <Link to="/gdpr">klauzuli informacyjnej</Link>
                         &nbsp;dotyczącej ochrony moich danych osobowych

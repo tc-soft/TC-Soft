@@ -45,6 +45,9 @@
   height: 6em;
   resize: vertical;
 }
+.contact__rodo {
+  font-size: 0.9rem;
+}
 .contact__ValidationError {
   outline: none !important;
 }
