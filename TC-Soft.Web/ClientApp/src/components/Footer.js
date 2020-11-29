@@ -1,5 +1,5 @@
 import React from 'react';
-import CookieConsent, { Cookies } from "react-cookie-consent";
+import CookieConsent from "react-cookie-consent";
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -124,22 +124,18 @@ function Footer() {
                         <li>
                             <Link to="/gdpr">RODO</Link>
                         </li>
+                        <li>
+                            <Link to="/cookies">Polityka cookies</Link>
+                        </li>
+
                         <li>&copy; 2020.11 TC-Soft / Anivers Design</li>
                     </ul>
                 </div >
             </footer >
             <CookieConsent
                 cookieName="TC-Soft.PL"
-                enableDeclineButton
                 location="bottom"
                 buttonText="Zgadzam się"
-                declineButtonText="Nie zgadzam się"
-                
-                onDecline={() => {
-                    alert(`Wybrałeś brak zgody na zapisywanie plików cookies.\n\n` +
-                          `Zapisany zostaje jedynie plik cookies zawierający tą decyzję na okres 12 miesięcy.`
-                    )
-                  }}
 
                 style={{ 
                     background: "#eff6fd",
@@ -161,23 +157,12 @@ function Footer() {
                     fontSize: "1rem"
                   }}
 
-                declineButtonStyle={{
-                    background: "#eff6fd",
-                    border: "1px solid #ccc",
-                    borderRadius: "0px",
-                    boxShadow: "none",
-                    color: "#000",
-                    cursor: "pointer",
-                    flex: "0 0 auto",
-                    padding: "5px 10px",
-                    margin: "15px",
-                    fontSize: "1rem"
-                  }}
-
                 expires={365}
             >
-                Serwis wykorzystuje pliki cookies aby świadczyć usługi na najlepszym poziomie.
-                Więcej informacji dostępnych jest w&nbsp;
+                Serwis wykorzystuje pliki cookies. 
+                Możesz je wyłączyć w ustawieniach przeglądarki. 
+                Dalsze korzystanie z witryny bez zmiany ustawień oznacza wyrażenie zgody 
+                na korzystanie z plików cookies. Więcej informacji dostępnych jest w&nbsp;
                 <Link 
                     to="/cookies"
                     style={{ 
@@ -185,7 +170,7 @@ function Footer() {
                         fontSize: "0.9rem"
                     }}
                 >
-                    <strong>polityce plików cookies.</strong>
+                    <strong>Polityce plików cookies.</strong>
                 </Link>
             </CookieConsent>
         </React.Fragment >

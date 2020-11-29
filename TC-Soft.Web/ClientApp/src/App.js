@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Implementations from './pages/Implementations';
 import Gdpr from './pages/Gdpr';
+import Cookies from './pages/Cookies';
 import './styles/main.scss';
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route exact path="/gdpr">
             <Gdpr />
+          </Route>
+          <Route exact path="/cookies">
+            <Cookies />
           </Route>
           <Route exact path="/contact">
             <Contact />
