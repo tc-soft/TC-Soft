@@ -1,15 +1,19 @@
 import React from 'react';
 import CookieConsent from "react-cookie-consent";
 import { Link } from "react-router-dom";
+import useEventGA from "./useEventGA";
 
 function Footer() {
+    
     return (
         <React.Fragment>
             <footer>
                 <div className="social">
                     <ul>
                         <li>
-                            <a href="https://www.linkedin.com/in/tadeusz-ciszewski-475095191" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/tadeusz-ciszewski-475095191" target="_blank" rel="noopener noreferrer"
+                                onClick={useEventGA("Social Media", "Linkedin")}
+                            >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     height="24"
@@ -23,7 +27,9 @@ function Footer() {
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/tc-soft" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/tc-soft" target="_blank" rel="noopener noreferrer"
+                                onClick={useEventGA("Social Media", "GitHub")}
+                            >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     height="24"
@@ -55,7 +61,9 @@ function Footer() {
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/TC-Soft-100264435115387" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.facebook.com/TC-Soft-100264435115387" target="_blank" rel="noopener noreferrer"
+                                onClick={useEventGA("Social Media", "Facebook")}
+                            >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     height="24"
@@ -71,7 +79,9 @@ function Footer() {
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/channel/UCVWl6FMlld06pQAqAmM-FHA?view_as=subscriber" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.youtube.com/channel/UCVWl6FMlld06pQAqAmM-FHA?view_as=subscriber" target="_blank" rel="noopener noreferrer"
+                                onClick={useEventGA("Social Media", "Youtube")}
+                            >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     height="20"
@@ -85,7 +95,9 @@ function Footer() {
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:office@tc-soft.pl?subject=Kontakt%20WEB&body=Napisz%20coś" target="_blank" rel="noopener noreferrer">
+                            <a href="mailto:office@tc-soft.pl?subject=Kontakt%20WEB&body=Napisz%20coś" target="_blank" rel="noopener noreferrer"
+                                onClick={useEventGA("Social Media", "E-mail")}
+                            >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     height="20"
@@ -102,11 +114,6 @@ function Footer() {
                 </div >
 
                 <div className="legal">
-
-                    {/* <Link to="/contact">
-                        <img src="./Microsoft_365_logo.png" alt="Microsoft365"></img>
-                    </Link> */}
-
                     <ul>
                         <li>
                             <a href="#top">Hosting by

@@ -7,11 +7,11 @@ import Authorizations from '../components/Authorizations';
 import Footer from '../components/Footer';
 
 function Home() {
+
   return (
     <React.Fragment>
         <Header />
         <Banner />
-        {/* <Articles /> */}
         <MainSection />
         <Authorizations />
         <Footer />
