@@ -17,8 +17,6 @@
       justify-content: flex-start;
       align-items: stretch;
       align-content: stretch;
-
-      // max-width: 300px;
     }
   
     &__title {
@@ -43,7 +41,6 @@
       padding: 0.3em;
       margin-top: 0.3rem;
       margin-bottom: 0.1rem;
-      // outline-color: black;
     }
 
     textarea {
@@ -60,11 +57,9 @@
 
     &__ValidationError {
       outline: none !important;
-      // border:1px solid red;
     }
 
     &__ValidationError:focus {
-        // outline: none !important;
         border:2px solid red;
         box-shadow: 0 0 3px #979797;
     }
@@ -88,8 +83,6 @@
     &__info {
       flex: 50%;
       padding: 0 1rem;
-      // min-width: 400px;
-      // flex-wrap: wrap;
     }
 }
   

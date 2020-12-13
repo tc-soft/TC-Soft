@@ -36,18 +36,12 @@
         padding: 1em;
         border: 0.1em solid #fff;
         background-color: #e6f8ff;
-        //background-color: $color12;
         border: 1px solid rgb(221, 221, 221);
     }
 
     tr {
         transition: 0.2s;
-        //height: 3em;
     }
-
-    // tr:nth-child(even) {
-    //     background-color: #fff;
-    // }
 
     tr td:first-child {
         text-align: center;

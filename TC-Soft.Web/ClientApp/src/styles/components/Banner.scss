@@ -4,32 +4,22 @@
     justify-content: space-between;
     justify-content: center;
     margin: 0 auto;
-    
     margin-top: 0.46rem;
     padding-bottom: 0.46rem;
-    
     max-width: 1032px;
     font-family: 'Titillium Web', sans-serif;
-    /* border-bottom-style: solid; */
-    /* border-bottom-color: #000; */
-    // background-color: #bbb;
     border-bottom-style: solid;
     border-bottom-color: #ccc;
 
-    // height: 10rem;
-
     &__svg {
-      // margin: 1rem 1rem;
       &Gradient1 {
         stop-opacity: 1;
-        //stop-color: #C4C4C4;
         stop-color: #def6ff;
       }
 
       &Gradient2 {
         stop-opacity: 1;
         stop-color: #f7f7f7;
-        // stop-color: #EBcccB;
       }
     }
 

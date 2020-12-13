@@ -1,0 +1,111 @@
+footer {
+  margin: 0 auto;
+  max-width: 1032px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.social {
+  margin-top: 1rem;
+  background-color: #fff;
+}
+.social ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-style: solid;
+  border-top-color: #ccc;
+}
+.social li {
+  display: inline-block;
+  margin: 1.25rem 0.75rem 1.25rem 0;
+  font-size: 1.25rem;
+}
+
+.legal {
+  background-color: #eee;
+  font-size: 0.8rem;
+}
+.legal ul {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  align-items: center;
+  height: 3rem;
+}
+.legal li {
+  margin: 0.5rem 1rem 0.5rem 1rem;
+}
+.legal li a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+}
+.legal li a svg {
+  margin: 0 0 0.1rem 0.2rem;
+}
+.legal li:nth-last-child(2) {
+  flex: 1;
+}
+.legal img {
+  height: 20px;
+  margin: 0.5rem 1rem 0rem 1rem;
+}
+
+.iconLinkedinFill .iconLinkedinFill1 {
+  fill: white;
+}
+.iconLinkedinFill .iconLinkedinFill2 {
+  fill: black;
+}
+.iconLinkedinFill:hover .iconLinkedinFill2 {
+  fill: #3663AB;
+}
+
+.iconGitHUBFill iconGitHUBFill1 {
+  fill: #2F2C2A;
+}
+
+.iconYoutubeFill .iconYoutubeFill1 {
+  fill: black;
+  fill-rule: nonzero;
+}
+.iconYoutubeFill .iconYoutubeFill2 {
+  fill: white;
+  fill-rule: nonzero;
+}
+.iconYoutubeFill:hover .iconYoutubeFill1 {
+  fill: red;
+  fill-rule: nonzero;
+}
+
+.iconFacebookFill .iconFacebookFill1 {
+  fill: black;
+  fill-rule: nonzero;
+}
+.iconFacebookFill .iconFacebookFill2 {
+  fill: white;
+  fill-rule: nonzero;
+}
+.iconFacebookFill:hover .iconFacebookFill1 {
+  fill: #1877F2;
+  fill-rule: nonzero;
+}
+
+.iconMailFill .iconMailFill1 {
+  fill: white;
+}
+.iconMailFill .iconMailFill2 {
+  fill: black;
+}
+.iconMailFill:hover .iconMailFill2 {
+  fill: #ffb300;
+}

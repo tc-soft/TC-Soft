@@ -1,0 +1,68 @@
+.mainsection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1032px;
+  border-bottom-style: solid;
+  border-bottom-color: #ccc;
+  margin-top: 0.4em;
+  padding-bottom: 0.4em;
+}
+
+.mainarticle {
+  flex: 1 0 40%;
+  margin: 0.5rem;
+  padding: 1.5em 2em 1em 2em;
+  height: 20em;
+}
+.mainarticle img {
+  margin-top: 2.3rem;
+}
+.mainarticle svg {
+  padding: 0 1em 0 0;
+  vertical-align: middle;
+}
+.mainarticle h3 {
+  color: black;
+  display: inline-block;
+  vertical-align: middle;
+}
+.mainarticle p {
+  flex: 100%;
+  text-align: justify;
+  text-indent: 3%;
+  line-height: 1.4rem;
+  padding-top: 1rem;
+}
+.mainarticle__microsoft365 {
+  margin-top: 0.5rem;
+  font-size: 0.7em;
+}
+.mainarticle__background-1 {
+  background-image: url("../../images/background-1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.mainarticle__background-2 {
+  background-image: url("../../images/background-2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.mainarticle__background-3 {
+  background-image: url("../../images/background-3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.mainarticle__background-4 {
+  background-image: url("../../images/background-4.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.mainarticle__NetCore {
+  padding: 0rem 0.5rem !important;
+}

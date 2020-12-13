@@ -32,7 +32,6 @@ a:hover {
 .legal {
     background-color: #eee;
     font-size: 0.8rem;
-    
 
     ul {
         display: flex;
@@ -48,8 +47,6 @@ a:hover {
         a {
             display: flex;
             align-items: center;
-            // justify-content: center;
-            // background-color: red;
             height: 100%;
             text-decoration: none;
 
@@ -92,7 +89,6 @@ a:hover {
 }
 
 .iconYoutubeFill {
-
     .iconYoutubeFill1 {
         fill:black;
         fill-rule:nonzero;
@@ -112,7 +108,6 @@ a:hover {
 }
 
 .iconFacebookFill {
-    
     .iconFacebookFill1 {
         fill: black;
         fill-rule:nonzero;
@@ -141,12 +136,8 @@ a:hover {
     }
 
     &:hover {
-
         .iconMailFill2 {
-            // fill : #E6AF2E;
             fill : #ffb300;
         }
-
     }
 }
-

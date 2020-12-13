@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import useEventGA from "./useEventGA";
 
 function Footer() {
-    
     return (
         <React.Fragment>
             <footer>
