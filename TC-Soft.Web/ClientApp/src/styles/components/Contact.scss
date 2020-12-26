@@ -103,3 +103,7 @@
   background-color: white; 
   border: 1.5px solid black;
 }
+
+.inactive {
+  filter: blur(2px) grayscale(1);
+}

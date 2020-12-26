@@ -52,17 +52,22 @@ function ContactForm() {
                     .then((data) => {
                         console.log("messages", data);
                         setSubmitting(false);
+                        resetForm();
+                        alert("Wiadomość wysłana.\n\nDziękuję.");
                     })
 
                     .catch((error) => {
-                        console.error('Error:', error);
+                        setTimeout(() => {
+                            console.error('Error:', error);
+                            setSubmitting(false);
+                            alert("Wiadomość nie została wysłana.\n\nBłąd serwera.");
+                        }, 400);
                     });
-
-                    resetForm();
+                    
                 }}
             >
-            {({ values, touched, errors, dirty, isValid }) => (
-                <Form className="contact__form">
+                {({ values, touched, errors, dirty, isValid, isSubmitting }) => (
+                    <Form className={isSubmitting ? "contact__form inactive" : "contact__form"}>
                     <h3 className="contact__title">Formularz kontaktowy</h3>
 
                     <Field 
