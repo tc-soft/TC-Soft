@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
+import ErrorMessage from './ErrorMessage';
 
 function ContactForm() {
     return (
@@ -71,31 +72,7 @@ function ContactForm() {
                         className={errors.name && (touched.name || values.name) && "contact__ValidationError"}
                     />
 
-                    {errors.name && (touched.name || values.name)  ? 
-                        (
-                            <div className="contact__errorMessage">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                height="10px" version="1.1"
-                                fill="none"
-                                viewBox="0 0 30 30"
-                                >
-                                    <g>
-                                        <path d="M15 0C6.72 0 0 6.72 0 15C0 23.28 6.72 30 15 30C23.28 30 30 23.28 30 15C30 6.72 23.28 0 15 0ZM15 16.5C14.175 16.5 13.5 15.825 13.5 15V9C13.5 8.175 14.175 7.5 15 7.5C15.825 7.5 16.5 8.175 16.5 9V15C16.5 15.825 15.825 16.5 15 16.5ZM16.5 22.5H13.5V19.5H16.5V22.5Z"
-                                        fill="#E85C66"
-                                    />
-                                    </g>
-                                </svg>
-                                
-                                <p>{errors.name}</p>
-                            </div>
-                        )
-                        :
-                        (
-                            <div className="contact__errorMessage">
-                                <p></p>
-                            </div>
-                        )
-                    }
+                    <ErrorMessage errors={errors.name} touched={touched.name} values={values.name} />
 
                     <Field 
                         name="email"
@@ -104,31 +81,7 @@ function ContactForm() {
                         className={errors.email && (touched.email || values.email) && "contact__ValidationError"}
                     />
 
-                    {errors.email && (touched.email || values.email) ? 
-                        (
-                            <div className="contact__errorMessage">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                height="10px" version="1.1"
-                                fill="none"
-                                viewBox="0 0 30 30"
-                                >
-                                    <g>
-                                        <path d="M15 0C6.72 0 0 6.72 0 15C0 23.28 6.72 30 15 30C23.28 30 30 23.28 30 15C30 6.72 23.28 0 15 0ZM15 16.5C14.175 16.5 13.5 15.825 13.5 15V9C13.5 8.175 14.175 7.5 15 7.5C15.825 7.5 16.5 8.175 16.5 9V15C16.5 15.825 15.825 16.5 15 16.5ZM16.5 22.5H13.5V19.5H16.5V22.5Z"
-                                        fill="#E85C66"
-                                    />
-                                    </g>
-                                </svg>
-                                
-                                <p>{errors.email}</p>
-                            </div>
-                        )
-                        :
-                        (
-                            <div className="contact__errorMessage">
-                                <p></p>
-                            </div>
-                        )
-                    }
+                    <ErrorMessage errors={errors.email} touched={touched.email} values={values.email} />
 
                     <Field 
                         name="message"
@@ -137,31 +90,7 @@ function ContactForm() {
                         className={errors.message && (touched.message || values.message) && "contact__ValidationError"}
                     />
 
-                    {errors.message && (touched.message || values.message)  ? 
-                        (
-                            <div className="contact__errorMessage">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                height="10px" version="1.1"
-                                fill="none"
-                                viewBox="0 0 30 30"
-                                >
-                                    <g>
-                                        <path d="M15 0C6.72 0 0 6.72 0 15C0 23.28 6.72 30 15 30C23.28 30 30 23.28 30 15C30 6.72 23.28 0 15 0ZM15 16.5C14.175 16.5 13.5 15.825 13.5 15V9C13.5 8.175 14.175 7.5 15 7.5C15.825 7.5 16.5 8.175 16.5 9V15C16.5 15.825 15.825 16.5 15 16.5ZM16.5 22.5H13.5V19.5H16.5V22.5Z"
-                                        fill="#E85C66"
-                                    />
-                                    </g>
-                                </svg>
-                                
-                                <p>{errors.message}</p>
-                            </div>
-                        )
-                        :
-                        (
-                            <div className="contact__errorMessage">
-                                <p></p>
-                            </div>
-                        )
-                    }
+                    <ErrorMessage errors={errors.message} touched={touched.message} values={values.message} />
 
                     <label className="contact__rodo">
                         <Field 
@@ -178,7 +107,7 @@ function ContactForm() {
                         <button type="reset" className="buttonReset" disabled={!dirty}>Reset</button>
                     </div>
                 </Form>
-             )}
+            )}
             </Formik>
         </React.Fragment>
     );
