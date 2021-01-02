@@ -4,7 +4,7 @@ import CookiesInfo from '../components/Cookies/CookiesInfo';
 import Footer from '../components/Footer';
 import '../styles/pages/Cookies.scss';
 
-function Cookies() {
+function CookiesPage() {
   return (
     <React.Fragment>
         <Header />
@@ -14,4 +14,4 @@ function Cookies() {
   );
 }
 
-export default Cookies;
+export default CookiesPage;

@@ -6,7 +6,7 @@ import ContactQRCode from '../components/Contact/ContactQRCode';
 import Footer from '../components/Footer';
 import '../styles/pages/Contact.scss';
 
-function Contact() {
+function ContactPage() {
   return (
     <React.Fragment>
         <Header />
@@ -20,4 +20,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default ContactPage;

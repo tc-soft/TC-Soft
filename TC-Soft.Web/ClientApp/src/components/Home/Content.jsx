@@ -1,12 +1,11 @@
 import React from 'react';
-import './HomeInfo.scss';
 
-function MainSection() {
+function Content() {
     return (
         <React.Fragment>
-            <section className="mainsection">
-                <article className="mainarticle mainarticle__background-1">
-                    <header className="article__header">
+            <section className="content">
+                <article className="content__article content__article--background-1">
+                    <header>
                         <svg xmlns="http://www.w3.org/2000/svg"
                             height="30px" version="1.1"
                             viewBox="0 0 832 516">
@@ -32,10 +31,10 @@ function MainSection() {
                         inwentaryzowanie sprzętu i oprogramowania.
                         Utrzymywanie popularnych na rynku aplikacji Sage/Comarch/WAPRO/InsErt. Działam w oparciu o stałe Umowy.
                     </p>
-                </article >
+                </article>
 
-                <article className="mainarticle mainarticle__background-2">
-                    <header className="article__header">
+                <article className="content__article content__article--background-2">
+                    <header>
                         <svg xmlns="http://www.w3.org/2000/svg"
                             height="30px" version="1.1"
                             viewBox="0 0 149 93">
@@ -68,14 +67,14 @@ function MainSection() {
                         <img src="./Microsoft_365_logo.png" alt="Microsoft365" height="20px"></img><br/>
                     </a>
                     
-                    <div className="mainarticle__microsoft365">
+                    <div className="content__article--microsoft365">
                         Business Basic 4,20EUR/mies. (Exchange/Teams/SharePoint)<br/>
                         Business Standard 10,50 EUR/mies. (MS Office/Exchange/Teams/SharePoint)
                     </div>
-                </article >
+                </article>
 
-                < article className="mainarticle mainarticle__background-3" >
-                    <header className="article__header">
+                < article className="content__article content__article--background-3" >
+                    <header>
                         <svg xmlns="http://www.w3.org/2000/svg"
                             height="30px" version="1.1"
                             viewBox="0 0 162 100">
@@ -90,7 +89,7 @@ function MainSection() {
                             </g>
                         </svg>
                         <h3>Serwerownie</h3>
-                    </header >
+                    </header>
 
                     <p>
                         Buduję, wdrażam, utrzymuję małe serwerownie w rejonie miasta Świdwin i okolic.
@@ -104,12 +103,10 @@ function MainSection() {
                         Zmniejsza nam ilość fizycznie zajmowanego miejsca, a konieczność uruchomienia kolejnego serwera produkcyjnego
                         trwa do minuty i nie wymaga zakupu serwera fizycznego.
                     </p>
+                </article>
 
-
-                </article >
-
-                <article className="mainarticle mainarticle__background-4">
-                    <header className="article__header">
+                <article className="content__article content__article--background-4">
+                    <header>
                         <svg xmlns="http://www.w3.org/2000/svg"
                             height="30px" version="1.1"
                             viewBox="0 0 698 429">
@@ -132,7 +129,7 @@ function MainSection() {
                         Dla klientów oferuje hosting współdzielony wraz z zarządzaniem. Hostuję strony oparte na popularnych CMS-ach, bazy danych w technologiach MSSQL, Postgress, MySQL. 
                         Wspieram hosting technologii 
                         
-                        <svg className="article__NetCore"
+                        <svg className="content__article--NetCore"
                         viewBox="-0.23294661979148623 0 125.23294661979149 79.04777140278348"
                         xmlns="http://www.w3.org/2000/svg"
                         height="15">
@@ -147,4 +144,4 @@ function MainSection() {
     );
 }
 
-export default MainSection;
+export default Content;

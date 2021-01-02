@@ -4,7 +4,7 @@ import GdprInfo from '../components/GDPR/GdprInfo';
 import Footer from '../components/Footer';
 import '../styles/pages/Gdpr.scss';
 
-function Gdpr() {
+function GdprPage() {
   return (
     <React.Fragment>
         <Header />
@@ -14,4 +14,4 @@ function Gdpr() {
   );
 }
 
-export default Gdpr;
+export default GdprPage;

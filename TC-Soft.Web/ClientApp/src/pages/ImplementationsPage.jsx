@@ -4,7 +4,7 @@ import ImplementationsInfo from '../components/Implementations/ImplementationsIn
 import Footer from '../components/Footer';
 import '../styles/pages/Implementations.scss';
 
-function Implementations() {
+function ImplementationsPage() {
   return (
     <React.Fragment>
         <Header />
@@ -14,4 +14,4 @@ function Implementations() {
   );
 }
 
-export default Implementations;
+export default ImplementationsPage;

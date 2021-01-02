@@ -345,8 +345,5 @@ p, h1, h2, h3, h4, ul, li {
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  max-height: 100vh;
   font-family: "Titillium Web", sans-serif;
 }
