@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 .authorizations {
     display: flex;
     flex-direction: row;
@@ -11,7 +13,7 @@
     h3 {
         flex: 0 1 100%;
         padding: 1rem 0rem 0rem 1rem;
-        color: black;
+        color: $color00;
         display: inline-block;
         vertical-align: middle;
     }

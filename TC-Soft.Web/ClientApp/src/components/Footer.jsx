@@ -1,7 +1,8 @@
 import React from 'react';
-import CookieConsent from "react-cookie-consent";
-import { Link } from "react-router-dom";
-import useEventGA from "./useEventGA";
+import { Link } from 'react-router-dom';
+import CookieConsent from 'react-cookie-consent';
+import useEventGA from './useEventGA';
+import './Footer.scss';
 
 function Footer() {
     return (

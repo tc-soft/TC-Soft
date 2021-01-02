@@ -1,16 +1,18 @@
-.mainsection {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    max-width: 1032px;    
-    border-bottom-style: solid;
-    border-bottom-color: #ccc;
-    margin-top: 0.4em;
-    padding-bottom: 0.4em;
-  }
+@import '../../styles/variables';
 
-  .mainarticle {
+.mainsection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1032px;    
+  border-bottom-style: solid;
+  border-bottom-color: $color07;
+  margin-top: 0.4em;
+  padding-bottom: 0.4em;
+}
+
+.mainarticle {
     flex: 1 0 40%;
     margin: 0.5rem;
     padding: 1.5em 2em 1em 2em;
@@ -19,13 +21,14 @@
     img {
       margin-top: 2.3rem;
     }
+
     svg {
       padding: 0 1em 0 0;
       vertical-align: middle;
     }
 
     h3 {
-      color: black;
+      color: $color00;
       display: inline-block;
       vertical-align: middle;
     }
@@ -74,4 +77,4 @@
     &__NetCore {
       padding: 0rem 0.5rem !important;
     }
-  }
+}

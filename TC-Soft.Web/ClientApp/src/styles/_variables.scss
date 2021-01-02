@@ -14,9 +14,19 @@ $color10: white;
 $color11: #A2D9F7;
 $color12: #007CB0; //RAL5015 CMYK 90,40,0,0 RGB 0,124,176
 
+$color13: #4CAF50; //button Send
+$color14: #e53e3e; //error message
+$color15: red;
+$color16: blue;
+$color17: #ffb300; //icon E-mail
+$color18: #1877F2; //icon Facebook
+$color19: #2F2C2A; //icon GitHUB
+$color20: #3663AB; //icon Linkedin
+
+$color21: rgba(0, 0, 0, 0.1); //Menu główne a:hover
+
 $colorModemSnd: red;
 $colorModemRcv: lime;
-
 
 .fill00 {
     fill: $color00;

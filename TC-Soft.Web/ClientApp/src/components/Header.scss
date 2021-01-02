@@ -1,3 +1,5 @@
+@import "../styles/variables";
+
 .header {
     display: flex;
     flex-direction: row;
@@ -8,7 +10,7 @@
     max-width: 1032px;
     height: 3rem;
     border-bottom-style: solid;
-    border-bottom-color: #ccc;
+    border-bottom-color: $color07;
 
     &__logo {
         padding: 0rem 0rem 0rem 0.9rem;
@@ -24,7 +26,7 @@
         & a {
             display: inline-block;
             width: 135px;
-            color: #000;
+            color: $color00;
             text-decoration: none;
             text-align: center;
             font-weight: 600;

@@ -1,4 +1,4 @@
-import ReactGA from "react-ga";
+import ReactGA from 'react-ga';
 
 const useEventGA = (category, action ) => {
   const trackEvent = () => {

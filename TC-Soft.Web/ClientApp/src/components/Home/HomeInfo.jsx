@@ -1,4 +1,5 @@
 import React from 'react';
+import './HomeInfo.scss';
 
 function MainSection() {
     return (

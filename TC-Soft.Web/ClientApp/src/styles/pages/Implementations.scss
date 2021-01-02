@@ -1,3 +1,5 @@
+@import "../variables";
+
 .implementations {
     display: flex;
     flex-direction: row;
@@ -6,10 +8,7 @@
     align-items: flex-start;
     margin: 2rem auto;
     max-width: 1000px;
-    //background-color: #f5f5f5;
-    //background-color: rgb(235, 235, 235);
-    background-color: #fff;
-
+    background-color: $color10;
 
     &__table {
         width: 100%;
@@ -27,14 +26,13 @@
         width: 10%;
     }
 
-
     table {
         border-collapse: collapse;
     }
 
     th {
         padding: 1em;
-        border: 0.1em solid #fff;
+        border: 0.1em solid $color10;
         background-color: #e6f8ff;
         border: 1px solid rgb(221, 221, 221);
     }
@@ -52,7 +50,7 @@
     }
     
     tr:hover {
-        background-color: #eee;
+        background-color: $color09;
         transform: scale(1.03); 
     }
 

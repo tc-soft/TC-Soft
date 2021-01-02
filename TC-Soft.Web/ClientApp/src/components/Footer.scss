@@ -1,3 +1,5 @@
+@import "../styles/variables";
+
 footer {
     margin: 0 auto;
     max-width: 1032px;
@@ -5,7 +7,7 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: #000;
+    color: $color00;
 }
 a:hover {
     text-decoration: underline;
@@ -13,14 +15,14 @@ a:hover {
 
 .social {
     margin-top: 1rem;
-    background-color: #fff;
+    background-color: $color10;
 
     ul {
         display: flex;
         justify-content: center;
         align-items: center;
         border-top-style: solid;
-        border-top-color: #ccc;
+        border-top-color: $color07;
     }
     li {
         display: inline-block;
@@ -30,7 +32,7 @@ a:hover {
 }
 
 .legal {
-    background-color: #eee;
+    background-color: $color09;
     font-size: 0.8rem;
 
     ul {
@@ -68,11 +70,11 @@ a:hover {
 
 .iconLinkedinFill {
     .iconLinkedinFill1 {
-        fill:white;
+        fill: $color10;
     }
     
     .iconLinkedinFill2 {
-        fill:black;
+        fill: $color00;
     }
     
     &:hover {
@@ -90,12 +92,12 @@ a:hover {
 
 .iconYoutubeFill {
     .iconYoutubeFill1 {
-        fill:black;
+        fill: $color00;
         fill-rule:nonzero;
     }
     
     .iconYoutubeFill2 {
-        fill:white;
+        fill: $color10;
         fill-rule:nonzero;
     }
 
@@ -109,12 +111,12 @@ a:hover {
 
 .iconFacebookFill {
     .iconFacebookFill1 {
-        fill: black;
+        fill: $color00;
         fill-rule:nonzero;
     }
     
     .iconFacebookFill2 {
-        fill:white;
+        fill: $color10;
         fill-rule:nonzero;
     }
 
@@ -128,11 +130,11 @@ a:hover {
 
 .iconMailFill {
     .iconMailFill1 {
-        fill:white;
+        fill: $color10;
     }
     
     .iconMailFill2 {
-        fill:black;
+        fill: $color00;
     }
 
     &:hover {

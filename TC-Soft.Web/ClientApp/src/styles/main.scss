@@ -1,14 +1,14 @@
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-@import "normalize";
-@import "variables";
-@import "./body";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
+@import "./normalize";
 
-@import './components/Header.scss';
-@import './components/Banner.scss';
-@import './components/MainSection.scss';
-@import './components/Authorizations.scss';
-@import './components/Implementations.scss';
-@import './components/Gdpr.scss';
-@import './components/Cookies.scss';
-@import './components/Contact.scss';
-@import './components/Footer.scss';
+p, h1, h2, h3, h4, ul, li {
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  max-height: 100vh;
+  font-family: 'Titillium Web', sans-serif;
+}

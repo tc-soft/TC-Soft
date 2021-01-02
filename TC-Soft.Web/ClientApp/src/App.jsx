@@ -6,6 +6,7 @@ import Implementations from './pages/Implementations';
 import Gdpr from './pages/Gdpr';
 import Cookies from './pages/Cookies';
 import usePageTracking from './components/usePageTracking';
+
 import './styles/main.scss';
 
 function App() {

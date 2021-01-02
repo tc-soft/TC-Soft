@@ -1,4 +1,6 @@
-.gdpr {
+@import "../variables";
+
+.cookies {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -11,6 +13,12 @@
         flex: 100%;
         padding: 0 0 1rem 0;
         text-align: center;
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        margin-bottom: 0.4rem;
+        font-size: 1.1rem;
     }
 
     p {
@@ -19,9 +27,13 @@
         line-height: 1.4rem;
     }
 
+    a {
+        text-decoration: none;
+    }
+
     &__mainPoint {
-        margin: 0 0 0 1rem;
-        list-style-type: decimal;
+        margin: 0 0 0 0rem;
+        list-style-type: none;
         
         li {
             margin-top: 1.5rem;
@@ -31,20 +43,21 @@
     }
 
     &__subPoint {
-        margin: 0 0 0 1rem;
+        margin: 0 0 1rem 1rem;
         list-style-type: none;
 
         li {
             margin-top: 0.5rem;
+            text-align: justify;
+            line-height: 1.4rem;
         }
         
         li::before {
             content: "•";
-            color: rgb(107, 107, 107);
+            color: $color01;
             display: inline-block;
             width: 1em;
             margin-left: -1em
         }
     }
 }
-
