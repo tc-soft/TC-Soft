@@ -1,10 +1,10 @@
 import React from 'react';
 import { Switch, Route} from 'react-router-dom';
-import Home from './pages/Home';
-import Contact from './pages/Contact';
-import Implementations from './pages/Implementations';
-import Gdpr from './pages/Gdpr';
-import Cookies from './pages/Cookies';
+import HomePage from './pages/HomePage';
+import ContactPage from './pages/ContactPage';
+import ImplementationsPage from './pages/ImplementationsPage';
+import GdprPage from './pages/GdprPage';
+import CookiesPage from './pages/CookiesPage';
 import usePageTracking from './components/usePageTracking';
 
 import './styles/main.scss';
@@ -14,19 +14,19 @@ function App() {
   return (
       <Switch>
         <Route exact path="/">
-          <Home />
+          <HomePage />
         </Route>
         <Route exact path="/implementations">
-          <Implementations />
+          <ImplementationsPage />
         </Route>
         <Route exact path="/gdpr">
-          <Gdpr />
+          <GdprPage />
         </Route>
         <Route exact path="/cookies">
-          <Cookies />
+          <CookiesPage />
         </Route>
         <Route exact path="/contact">
-          <Contact />
+          <ContactPage />
         </Route>
       </Switch>
   );
