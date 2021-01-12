@@ -1,42 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { ReactComponent as Logo } from '../images/logo.svg';
+import { ReactComponent as MenuOpen } from '../images/menuOpen.svg';
+import { ReactComponent as MenuClose } from '../images/menuClose.svg';
 import './Header.scss';
 
 function Header() {
+
+    const [isOpen, toggleMenuState] = useState(false);
+    const toggleMenu = event => {
+        event.preventDefault();
+        toggleMenuState(!isOpen);
+    };
+
     return (
-       <React.Fragment>
+        <React.Fragment>
             <header className="header">
 
-                <svg className="header__logo"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="89"
-                    height="20"
-                    viewBox="0 0 89 20"
-                    fill="none">
+                <Logo className="header__logo" onClick={toggleMenu}/>
 
-                    <path d="M37.9429 4.8C38.9414 3.30614 40.9454 3.31613 40.9454 3.31613H48.2286V6.85715H37.0689C37.0689 6.85715 36.9444 6.29387 37.9429 4.8Z" fill="black"/>
-                    <path d="M88.9143 3.3143H77.4857V6.85716H88.9143V3.3143Z" fill="black"/>
-                    <path className="fill12" d="M11.4286 3.3143H0V6.85716H11.4286V3.3143Z"/>
-                    <path d="M85.3714 8.11429H81.0286V17.0286H85.3714V8.11429Z" fill="black"/>
-                    <path className="fill12" d="M7.88572 8.11429H3.54286V17.0286H7.88572V8.11429Z"/>
-                    <path d="M74.8571 8.11429H64.9143V17.0286H69.3208V12.4H74.8571V8.11429Z" fill="black"/>
-                    <path d="M67.5037 4.42476C69.2931 3.1524 70.4751 3.32179 70.4751 3.32179H76.2286V6.85716H65.3714C65.3714 6.85716 65.7143 5.69711 67.5037 4.42476Z" fill="black"/>
-                    <path className="fill12" d="M15.5037 4.42476C17.293 3.1524 18.4751 3.32179 18.4751 3.32179H24.2286V6.85716H13.3714C13.3714 6.85716 13.7143 5.69711 15.5037 4.42476Z"/>
-                    <path className="fill12" d="M13.0037 8.11428H17.6425C16.5544 10.3854 17.4857 12.4 19.3034 13.3379H24.2286V17.0286H17.8144C15.2945 17.0286 11.5719 12.543 13.0037 8.11428Z"/>
-                    <path d="M50.3429 6.85716H62.8571C62.8571 6.85716 61.0857 3.3143 56.6286 3.3143C52.1714 3.3143 50.3429 6.85716 50.3429 6.85716Z" fill="black"/>
-                    <path d="M56.5945 13.0286C54.7429 13.0286 54.1143 11.2 54.1143 10C54.1143 8.62857 54.8571 8.11429 54.8571 8.11429H49.7714C49.7714 8.11429 49.4857 8.68572 49.4857 10C49.4857 11.3143 50.2175 16.9143 56.5945 16.9143C62.9714 16.9143 63.7143 11.3143 63.7143 10C63.7143 8.68572 63.4286 8.11429 63.4286 8.11429H58.3429C58.3429 8.11429 59.0857 8.62738 59.0857 10C59.0857 11.2571 58.446 13.0286 56.5945 13.0286Z" fill="black"/>
-                    <path d="M37.0286 8.11429H41.8852C41.8852 8.11429 42.031 8.27559 42.628 8.50922C43.2249 8.74286 46.032 9.37143 47.0286 10.3147C47.7225 10.9714 48.2274 11.6687 48.2274 12.4586C48.2274 13.2485 48.2845 14.264 47.5989 15.336C46.9133 16.408 45.5991 17.0286 44.5135 17.0286C43.4279 17.0286 37.0286 17.0286 37.0286 17.0286V13.2485H43.4279C43.4279 13.2485 43.8561 13.1429 43.6565 12.5714C43.4569 12 41.8852 11.7251 41.8852 11.7251C41.8852 11.7251 39.5997 11.1609 38.3427 10.3147C37.0857 9.46836 37.0286 8.11429 37.0286 8.11429Z" fill="black"/>
-                    <path className="fill12" d="M4.57143 9.37143L14.7429 0L27.5429 4.51429L26 5.31429L15.0286 1.42857L6.4 9.54286L12.4 18.5143L24.5714 15.9429L26 5.31429L27.5429 4.51429L25.7143 16.9714L11.6571 20L4.57143 9.37143Z"/>
-                    <rect x="25.4857" y="8.91431" width="10.2857" height="2.51429" fill="black"/>
-                </svg>
-
-                <nav className="header__menu">
+                <nav className="header__menuDesktop">
                     <ul>
                         <li><Link to="/">HOME</Link></li>
                         <li><Link to="/implementations">WDROŻENIA</Link></li>
                         <li><Link to="/contact">KONTAKT</Link></li>
                     </ul>
                 </nav>
+
+                <MenuOpen className={isOpen ? "header__hamburger header__hamburger--hidden" : "header__hamburger"} onClick={toggleMenu}/>
+
+                <nav className={isOpen ? "header__menuMobile header__menuMobile--visible" : "header__menuMobile"}>
+                    <MenuClose onClick={toggleMenu}/>
+                    <ul>
+                        <li><Link to="/">HOME</Link></li>
+                        <li><Link to="/implementations">WDROŻENIA</Link></li>
+                        <li><Link to="/contact">KONTAKT</Link></li>
+                    </ul>
+                </nav>
+
             </header>
         </React.Fragment>
     );

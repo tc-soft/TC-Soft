@@ -4,8 +4,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    align-content: center;
     margin: 0 auto;
     max-width: 1032px;
     height: 3rem;
@@ -16,13 +17,28 @@
         padding: 0rem 0rem 0rem 0.9rem;
     }
 
-    &__menu {
-        margin: 0 0 0 auto;
+    &__hamburger {
+        display: none;
+        padding: 0rem 0.9rem 0rem 0;
+        fill: $color01;
 
-        & li {
-            display: inline;
+        &--hidden {
+            visibility: hidden;
         }
+    }
 
+    &__menuDesktop {
+        margin: 0 0 0 auto;
+        
+        ul {
+            display: flex;
+            flex-direction: row;
+    
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+    
         & a {
             display: inline-block;
             width: 135px;
@@ -34,10 +50,73 @@
             transition: 200ms;
             padding: 0.7rem 0;
         }
-
+    
         & a:hover {
             background-color: rgba(0, 0, 0, 0.1);
             text-decoration: none;
+        }
+    }
+
+    &__menuMobile {
+        display: flex;
+        flex-direction: column;
+
+        background-color: $color00; //kolor tła
+        color: $color05;
+
+        transform: translateX(16rem);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, visibility 0.3s;
+
+        height: 100%; //aby był w całym pionie
+        max-width: 80%;
+        overflow-y: auto;
+        
+        padding: 0.75rem 0.75rem;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 10.5rem;
+        opacity: 0.8;
+        visibility: hidden;
+
+        svg {
+            align-self: flex-end;
+            fill: $color04;
+
+            align-items	:center;
+            align-content:center;
+        }
+
+        svg:hover {
+            fill: white;
+        }
+
+        ul {
+            margin: 0 0 1rem 0;
+            list-style: none;
+            padding: 0; 
+            li {
+                padding: 0rem 1rem;
+
+                a {
+                    border: 0;
+                    border-bottom: solid 1px $color06;
+                    color: inherit;
+                    display: block;
+                    line-height: 3.5rem;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    color: white;
+                }
+            }
+        }
+
+        &--visible {
+            transform: translateX(0);
+            box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
+            visibility: visible;
         }
     }
 }
