@@ -1,0 +1,12 @@
+@import "../variables";
+
+.instructions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2rem auto;
+    max-width: 1000px;
+    background-color: $color05;
+}

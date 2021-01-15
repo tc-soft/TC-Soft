@@ -17,12 +17,13 @@ function Header() {
         <React.Fragment>
             <header className="header">
 
-                <Logo className="header__logo" onClick={toggleMenu}/>
+                <Logo className="header__logo"/>
 
                 <nav className="header__menuDesktop">
                     <ul>
                         <li><Link to="/">HOME</Link></li>
                         <li><Link to="/implementations">WDROŻENIA</Link></li>
+                        <li><Link to="/instructions">INSTRUKCJE</Link></li>
                         <li><Link to="/contact">KONTAKT</Link></li>
                     </ul>
                 </nav>
@@ -34,6 +35,7 @@ function Header() {
                     <ul>
                         <li><Link to="/">HOME</Link></li>
                         <li><Link to="/implementations">WDROŻENIA</Link></li>
+                        <li><Link to="/instructions">INSTRUKCJE</Link></li>
                         <li><Link to="/contact">KONTAKT</Link></li>
                     </ul>
                 </nav>

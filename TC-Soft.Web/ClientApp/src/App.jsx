@@ -1,8 +1,9 @@
 import React from 'react';
 import { Switch, Route} from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import ContactPage from './pages/ContactPage';
 import ImplementationsPage from './pages/ImplementationsPage';
+import InstructionsPage from './pages/InstructionsPage';
+import ContactPage from './pages/ContactPage';
 import GdprPage from './pages/GdprPage';
 import CookiesPage from './pages/CookiesPage';
 import usePageTracking from './components/usePageTracking';
@@ -18,6 +19,9 @@ function App() {
         </Route>
         <Route exact path="/implementations">
           <ImplementationsPage />
+        </Route>
+        <Route exact path="/instructions">
+          <InstructionsPage />
         </Route>
         <Route exact path="/gdpr">
           <GdprPage />
