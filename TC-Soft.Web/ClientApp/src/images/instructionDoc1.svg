@@ -1,0 +1,39 @@
+<svg
+    height="85"
+    viewBox="0 0 200 200"
+    xmlns="http://www.w3.org/2000/svg">
+
+    <style>
+        .instructionDoc1Fill1 { fill:#FAFEFF }
+        .instructionDoc1Fill2 { fill:#E1F8FF }
+        .instructionDoc1Fill3 { fill:#A2C6D4 }
+    </style>
+
+    <mask id="instructionDoc1Mask1" fill="white">
+        <path d="M-16.3918 -16.3919L132.394 -40.8222L199.919 92.8649L92.8649 199.918L-40.8222 132.394L-16.3918 -16.3919Z"/>
+    </mask>
+
+    <path d="M-16.3918 -16.3919L132.394 -40.8222L199.919 92.8649L92.8649 199.918L-40.8222 132.394L-16.3918 -16.3919Z"
+        class="instructionDoc1Fill1"
+        stroke="url(#instructionDoc1Linear1)"
+        stroke-width="20"
+        mask="url(#instructionDoc1Mask1)"/>
+    
+    <rect x="47" y="42" width="65" height="85.0909" rx="6" class="instructionDoc1Fill2"/>
+    <rect x="52.9091" y="102.272" width="53.1818" height="2.36364" class="instructionDoc1Fill3"/>
+    <rect x="88.3635" y="49.0908" width="17.7273" height="17.7273" class="instructionDoc1Fill3"/>
+    <rect x="52.9091" y="49.0908" width="26" height="5.90909" class="instructionDoc1Fill3"/>
+    <rect x="52.9091" y="58.5454" width="13" height="2.36364" class="instructionDoc1Fill3"/>
+    <rect x="52.9091" y="71.5454" width="10.6364" height="2.36364" class="instructionDoc1Fill3"/>
+    <rect x="52.9091" y="78.6362" width="53.1818" height="2.36364" class="instructionDoc1Fill3"/>
+    <rect x="52.9091" y="85.7271" width="53.1818" height="2.36364" class="instructionDoc1Fill3"/>
+    <rect x="52.9091" y="94" width="53.1818" height="2.36364" class="instructionDoc1Fill3"/>
+    <rect x="84.818" y="116.455" width="21.2727" height="2.36364" class="instructionDoc1Fill3"/>
+
+    <defs>
+        <linearGradient id="instructionDoc1Linear1" x1="72.9134" y1="73.107" x2="169.046" y2="252.778" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E5F5FF"/>
+            <stop offset="1" stop-color="#F9FDFF"/>
+        </linearGradient>
+    </defs>
+</svg>
