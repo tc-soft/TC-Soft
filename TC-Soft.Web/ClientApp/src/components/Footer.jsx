@@ -135,7 +135,7 @@ function Footer() {
                             <Link to="/cookies">Polityka cookies</Link>
                         </li>
 
-                        <li>&copy; 2020.11 TC-Soft / Anivers Design</li>
+                        <li>&copy; 2021 TC-Soft / Anivers Design</li>
                     </ul>
                 </div >
             </footer >
