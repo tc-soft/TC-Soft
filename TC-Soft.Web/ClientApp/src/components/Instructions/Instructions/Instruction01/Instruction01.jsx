@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from '../../../Header';
-import Footer from '../../../Footer';
 import '../../../../styles/pages/Instructions.scss';
 
 import picture01 from'./1.jpg';
@@ -13,7 +11,6 @@ import picture06 from'./6.jpg';
 function Instruction01() {
     return (
         <React.Fragment>
-            <Header />
             <section className="instructionDetail">
 
                 <h3>Asystent nieobecności w systemie poczty Exchange</h3>
@@ -65,7 +62,6 @@ function Instruction01() {
 
                 </ul>
             </section>
-            <Footer />
         </React.Fragment >
     );
 }
