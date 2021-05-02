@@ -34,7 +34,6 @@ namespace TC_Soft.Web.Controllers
         public async Task<IActionResult> Post([FromBody] WebContact webContact)
         {
             var ip = HttpContext.Connection.RemoteIpAddress.ToString();
-            //<YOUR_API_KEY>
 
             IpStackClient client = new IpStackClient(_ipStackOptions.Key);
             webContact.SingleDetails = client.GetIpAddressDetails(ip);
